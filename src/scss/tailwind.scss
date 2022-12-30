@@ -2,6 +2,11 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@layer base{
+	body {
+		@apply font-normal text-[14px] leading-[16px] text-black
+	}
+}
 
 .i-container{
 	@apply container;

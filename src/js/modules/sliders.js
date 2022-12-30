@@ -4,7 +4,7 @@ import 'swiper/css';
 // import 'swiper/css/scrollbar';
 
 const bannerSlider = new Swiper('.banner-slider', {
-	modules: [Navigation, Scrollbar, Mousewheel, Autoplay],
+	modules: [Navigation, Mousewheel, Autoplay],
 	speed: 800,
 	autoplay: {
 		delay: 4000,
@@ -15,9 +15,5 @@ const bannerSlider = new Swiper('.banner-slider', {
 	navigation: {
 		nextEl: '.banner-button-next',
 		prevEl: '.banner-button-prev',
-	},
-	scrollbar: {
-		el: '.banner-scrollbar',
-		draggable: true,
 	},
 });
