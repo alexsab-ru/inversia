@@ -1,18 +1,8 @@
 let mix = require('laravel-mix');
 require('mix-tailwindcss');
-require('mix-html-builder');
 mix
-	.html({
-		htmlRoot: './src/*.html',
-		output: 'docs',
-		partialRoot: './src/partials',
-		layoutRoot: './src/layouts',
-		minify: {
-			removeComments: true
-		}
-	})
-	.js('src/js/app.js', 'docs/js/app.min.js')
-	.sass('src/scss/app.scss', 'docs/css/styles.min.css')
+	.js('src/js/app.js', 'assets/js/app.min.js')
+	.sass('src/scss/app.scss', 'assets/css/styles.min.css')
 	.tailwind();
 
 
@@ -23,9 +13,9 @@ if (mix.inProduction()) {
 	mix.sourceMaps().webpackConfig({ devtool: 'inline-source-map' });
 	mix.browserSync({
 		server: {
-			baseDir: "./docs",
+			baseDir: "./",
 		},
-		files: ['docs/**/*.html', 'docs/css/styles.min.css', 'docs/js/app.min.js'],
+		files: ['**/*.html', 'assets/css/styles.min.css', 'assets/js/app.min.js'],
 		notify: false
 	});
 }
