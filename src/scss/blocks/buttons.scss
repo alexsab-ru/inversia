@@ -1,0 +1,9 @@
+.btn{
+	@apply rounded-[5px] border border-green-500 bg-green-500 text-white px-10 py-[6.5px] leading-none transition duration-300 hover:bg-opacity-90;
+	&.big{
+		@apply min-w-[206px] lg:min-w-[300px] text-lg xl:text-[20px] font-bold leading-none py-3.5 lg:py-4 text-center
+	}
+}
+.btn-o{
+	@apply bg-transparent text-44 hover:bg-green-500 hover:text-white;
+}

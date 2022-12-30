@@ -1,0 +1,33 @@
+.form-group{
+	display: block;
+	p{
+		@apply text-[14px] leading-[17px] sm:text-[16px] font-medium sm:leading-[19px] mb-2;
+	}
+}
+.form-input{
+	@apply w-full bg-E8 rounded-[5px] border border-9B outline-0 transition-all duration-300 focus:outline-0 focus:ring-1 focus:ring-green-500 focus:border-green-500 py-[9.5px];
+}
+.btn.form-btn{
+	@apply text-[16px] leading-[19px] xl:text-lg xl:leading-[21px] font-bold text-center py-[13px] outline-0 transition-all duration-300 focus:outline-0 focus:ring-1 focus:ring-green-500 focus:border-green-400;
+}
+
+// FAKE CHECKBOX
+label.checkbox{
+	@apply relative flex items-center gap-[6px];
+	input{
+		@apply w-0 h-0 opacity-0 invisible absolute;
+		&:checked~.fake-checkbox{
+			@apply before:opacity-100;
+		}
+	}
+	.fake-checkbox{
+		@apply w-[17px] h-[17px] rounded-[3px] border border-92 bg-white shrink-0 relative
+			before:content-[''] before:absolute before:w-4/5 before:h-4/5 before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:bg-[url(../../assets/img/icons/check-gray.svg)] before:bg-cover before:bg-center before:transition-opacity before:opacity-0;
+	}
+	.agree-info{
+		@apply text-xs xl:text-[14px] xl:leading-[17px] text-92;
+		a{
+			@apply transition-all duration-300 hover:underline hover:text-33
+		}
+	}
+}

@@ -1,0 +1,12 @@
+@mixin font($fname, $fstyle, $fweight, $furl){
+	@font-face{
+		font-family: $fname;
+		font-style: $fstyle;
+		font-weight: $fweight;
+		src: url($furl) format('woff');
+		font-display: swap;
+	}
+}
+
+@include font('i-roboto', normal, 300, '../fonts/Robotolight.woff2');
+@include font('i-roboto', normal, 700, '../fonts/Robotobold.woff2');
