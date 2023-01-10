@@ -4,7 +4,7 @@
 		.icon{
 			@apply w-[70px] flex justify-center relative;
 			.circle{
-				@apply absolute w-7 h-7 rounded-full bg-blue-300 -z-[1] duration-300 opacity-0;
+				@apply absolute w-7 h-7 rounded-full bg-blue-300 -z-[1] duration-300;
 			}
 		}
 	}
