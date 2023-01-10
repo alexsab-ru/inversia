@@ -11,3 +11,8 @@
 .i-container{
 	@apply container;
 }
+
+.list-item{
+	@apply pl-3 bg-[url(../img/icons/list-arrow-right.svg)] bg-no-repeat;
+	background-position: left top 5px;
+}

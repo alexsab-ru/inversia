@@ -11,21 +11,53 @@
 </head>
 
 <body>
-	<header class="header-top sticky w-full left-0 top-0 bg-blue-500 text-white z-50">
+
+	<div class="top-line sticky w-full left-0 top-0 bg-blue-500 text-white z-50">
 		<div class="i-container">
 			
-			<div class="flex items-center justify-between h-[50px]">
+			<div class="flex items-center justify-between">
 	
-				<div><a href="#">Самара</a></div>
+				<div class="relative group">
+					<a href="#" class="flex items-center gap-1.5 h-[50px] !leading-none relative">
+						<img src="assets/img/icons/location.svg" class="-mt-1" />
+						<span>Самара</span>
+						<img src="assets/img/icons/arrow-down-white.svg" />
+					</a>
+					<div class="absolute left-0 top-full bg-white rounded shadow-xl text-gray-300 min-w-full w-fit opacity-0 invisible transition-all duration-300 group-hover:opacity-100 group-hover:visible">
+						<a href="#" class="block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Москва</a>
+						<a href="#" class="block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Пермь</a>
+						<a href="#" class="block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Новосибирск</a>
+					</div>
+				</div>
 	
-				<ul class="flex gap-7">
-					<li class="relative">
-						<a href="#" class="flex items-center gap-1.5">
+				<ul class="flex">
+					<li class="relative group">
+						<a href="#" class="px-3.5 flex items-center gap-1.5 h-[50px] transition-colors duration-300 ease-in-out hover:bg-white/10">
 							<span>Покупателям</span>
 							<img src="assets/img/icons/arrow-down-white.svg" />
 						</a>
+						<ul class="absolute left-0 top-full bg-white rounded shadow-xl text-gray-300 min-w-full w-fit opacity-0 invisible transition-all duration-300 group-hover:opacity-100 group-hover:visible">
+							<li><a href="#" class="block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Ссылка #1</a></li>
+							<li><a href="#" class="block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Ссылка #2</a></li>
+							<li><a href="#" class="block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Ссылка #3</a></li>
+							<li><a href="#" class="block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Ссылка #4</a></li>
+						</ul>
 					</li>
-					<li><a href="#">О компании</a></li>
+					<li class="relative group">
+						<a href="#" class="px-3.5 flex items-center gap-1.5 h-[50px] transition-colors duration-300 ease-in-out hover:bg-white/10">
+							<span>О компании</span>
+							<img src="assets/img/icons/arrow-down-white.svg" />
+						</a>
+						<ul class="absolute left-0 top-full bg-white rounded shadow-xl text-gray-300 min-w-full w-fit opacity-0 invisible transition-all duration-300 group-hover:opacity-100 group-hover:visible">
+							<li><a href="#" class="block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Ссылка #1</a></li>
+							<li><a href="#" class="block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Ссылка #2</a></li>
+							<li><a href="#" class="block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Ссылка #3</a></li>
+							<li><a href="#" class="block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Ссылка #4</a></li>
+							<li><a href="#" class="block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Ссылка #5</a></li>
+							<li><a href="#" class="block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Ссылка #6</a></li>
+							<li><a href="#" class="block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Ссылка #7</a></li>
+						</ul>
+					</li>
 				</ul>
 	
 				<div class="flex gap-7">
@@ -38,7 +70,127 @@
 	
 		</div>
 		<!-- /.i-container -->
+	</div>
+	<!-- /.top-line -->
+
+	<header class="header">
+		<div class="i-container">
+			<div class="header-wrap flex items-center justify-between gap-x-[30px] py-10">
+
+				<a href="#" class="flex-shrink-0 max-w-[260px]">
+					<img src="assets/img/logo.svg" alt="Инверсия">
+				</a>
+
+				<div class="flex-grow">
+					<form class="search-form">
+						<div class="relative">
+							<input type="text" name="search" class="w-full border border-gray-300 rounded pl-4 pr-16 py-[26px] text-[14px] leading-none placeholder:text-gray-300 duration-300 focus:outline-0 focus:border-blue-500" placeholder="Поиск">
+							<button type="submit" class="absolute right-5 top-1/2 -translate-y-1/2">
+								<img src="assets/img/icons/search.svg" class="w-[30px]" alt="Поиск">
+							</button>
+						</div>
+					</for>
+				</div>
+
+				<div class="flex-shrink-0 flex items-center gap-[50px]">
+					<a href="#" class="flex flex-col items-center gap-[7px] duration-300 hover:text-blue-500 group">
+						<div class="icon">
+							<svg class="stroke-gray-300 duration-300 group-hover:stroke-blue-500" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.1864 5.11219L15.5 5.59063L15.8136 5.11219C17.3453 2.77566 20.0261 1.2251 22.7553 1.2251C27.0523 1.2251 30.6256 5.19129 30.625 10.1615V10.1615C30.625 14.2313 28.3501 18.2291 25.3265 21.7352C22.31 25.233 18.5938 28.189 15.8094 30.1694L15.8092 30.1695L15.5 30.3897L15.1908 30.1695L15.1906 30.1694C12.4062 28.189 8.68995 25.233 5.67351 21.7352C2.64986 18.2291 0.375 14.2313 0.375 10.1615C0.375 5.19124 3.94716 1.2251 8.24472 1.2251C10.9739 1.2251 13.6547 2.77566 15.1864 5.11219Z" stroke-width="0.75"/></svg>
+						</div>
+						<span>Избранное</span>
+					</a>
+					<a href="#" class="flex flex-col items-center gap-[7px] duration-300 hover:text-blue-500 group">
+						<div class="icon">
+							<svg class="fill-gray-300 duration-300 group-hover:fill-blue-500" width="41" height="32" viewBox="0 0 41 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M31.2995 11.4447L31.3741 11.5517H31.5046H39.1412C39.5282 11.5517 39.8459 11.8694 39.8459 12.2564C39.8459 12.6434 39.5282 12.9611 39.1412 12.9611H36.5158H36.3231L36.274 13.1475L31.6915 30.5705L31.6914 30.5704L31.6893 30.5799C31.6206 30.8889 31.3453 31.1001 31.0264 31.1001H9.06864C8.74973 31.1001 8.47441 30.8889 8.40574 30.5799L8.40592 30.5798L8.40347 30.5705L3.82184 13.1475L3.77282 12.9611H3.58006H0.954684C0.567679 12.9611 0.25 12.6434 0.25 12.2564C0.25 11.8694 0.567679 11.5517 0.954684 11.5517H8.59216H8.72314L8.7977 11.444L16.101 0.894784L16.1011 0.894806L16.1035 0.891157C16.306 0.58737 16.7674 0.504504 17.0934 0.721823C17.3966 0.923975 17.4797 1.38402 17.2639 1.70989L10.678 11.207L10.4058 11.5995H10.8834H29.1656H29.6432L29.371 11.207L22.7851 1.70994C22.5693 1.38406 22.6524 0.923984 22.9556 0.721823C23.2816 0.504504 23.743 0.58737 23.9455 0.891157L23.9454 0.891186L23.9484 0.895411L31.2995 11.4447ZM30.3112 29.6907H30.5042L30.5531 29.504L34.8014 13.2744L34.8834 12.9611H34.5596H5.53717H5.2133L5.29532 13.2744L9.54366 29.504L9.59253 29.6907H9.78551H30.3112Z" stroke="white" stroke-width="0.5"/><path d="M15.5023 26.0992C15.5023 26.4862 15.1846 26.8039 14.7976 26.8039C14.4106 26.8039 14.093 26.4862 14.093 26.0992V16.5523C14.093 16.1653 14.4106 15.8477 14.7976 15.8477C15.1846 15.8477 15.5023 16.1653 15.5023 16.5523V26.0992Z" stroke="white" stroke-width="0.5"/><path d="M20.7531 26.0992C20.7531 26.4862 20.4354 26.8039 20.0484 26.8039C19.6614 26.8039 19.3438 26.4862 19.3438 26.0992V16.5523C19.3438 16.1653 19.6614 15.8477 20.0484 15.8477C20.4354 15.8477 20.7531 16.1653 20.7531 16.5523V26.0992Z" stroke="white" stroke-width="0.5"/><path d="M26.0039 26.0992C26.0039 26.4862 25.6862 26.8039 25.2992 26.8039C24.9122 26.8039 24.5945 26.4862 24.5945 26.0992V16.5523C24.5945 16.1653 24.9122 15.8477 25.2992 15.8477C25.6862 15.8477 26.0039 16.1653 26.0039 16.5523V26.0992Z" stroke="white" stroke-width="0.5"/></svg>
+						</div>
+						<span>Корзина</span>
+					</a>
+					<a href="#" class="flex flex-col items-center gap-[7px] duration-300 hover:text-blue-500 group">
+						<div class="icon">
+							<svg class="fill-gray-300 duration-300 group-hover:fill-blue-500" width="30" height="32" viewBox="0 0 30 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.3979 9.17864C23.3979 13.9357 19.5262 17.8074 14.7692 17.8074C10.0121 17.8074 6.14042 13.9357 6.14042 9.17864C6.14042 4.42155 10.0121 0.549902 14.7692 0.549902C19.5262 0.549902 23.3979 4.42155 23.3979 9.17864ZM21.7902 9.17864C21.7902 5.30556 18.6422 2.15756 14.7692 2.15756C10.8961 2.15756 7.74808 5.30556 7.74808 9.17864C7.74808 13.0517 10.8961 16.1997 14.7692 16.1997C18.6422 16.1997 21.7902 13.0517 21.7902 9.17864Z" stroke="white" stroke-width="0.8"/><path d="M28.8151 30.2459V31.0498H0.723181V30.2459C0.723181 25.1582 3.45042 20.6999 7.52078 18.2352C7.98704 18.6092 8.48201 18.9453 9.00251 19.2424C5.39264 21.1395 2.816 24.753 2.39381 29.0026L2.35014 29.4421H2.79185H26.7505H27.1922L27.1486 29.0026C26.7263 24.752 24.1485 21.1379 20.5373 19.2411C21.057 18.944 21.5538 18.6095 22.0214 18.2352C26.0879 20.6999 28.8151 25.1582 28.8151 30.2459Z" stroke="white" stroke-width="0.8"/></svg>
+						</div>
+						<span>Войти</span>
+					</a>
+				</div>
+
+			</div>
+			<!-- /.header-wrap -->
+		</div>
+		<!-- /.i-cintainer -->
 	</header>
+	<!-- /.header -->
+
+	<main>
+
+		<div class="i-container">
+			<div class="flex gap-[30px]">
+
+				<aside class="aside flex-shrink-0 h-[800px] w-[260px] sticky top-[50px] left-0 bg-gray-100 py-5 pr-5">
+					<nav>
+						<ul>
+							<li>
+								<a href="#" class="text-xs !leading-[15px] flex items-center group">
+									<div class="icon w-[70px] flex justify-center relative">
+										<div class="absolute w-7 h-7 rounded-full bg-blue-300 -z-[1] duration-300 opacity-0 group-hover:opacity-100"></div>
+										<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M28.4569 29.0272H26.8924V27.5326C26.8924 27.1455 26.7416 26.7744 26.4739 26.5007C26.2062 26.2271 25.8431 26.0729 25.4644 26.0723H25.2956L21.0381 21.9891C21.7059 21.5984 22.1251 20.8798 22.1453 20.0938L22.1482 19.9933L25.2933 23.1138C25.709 23.5257 26.2646 23.7556 26.8433 23.7562C26.882 23.7562 26.9208 23.755 26.9595 23.7532C27.5434 23.7213 28.0921 23.4548 28.4852 23.0121C28.8784 22.5694 29.0854 21.9861 29.0605 21.3886C29.0356 20.7911 28.7818 20.2279 28.3528 19.8207L23.7566 15.458C23.6826 15.3877 23.6051 15.3221 23.5265 15.2589V3.77114C23.5253 2.77118 23.1362 1.81259 22.4448 1.10576C21.7522 0.398936 20.8144 0.00119819 19.8368 1.62055e-05H16.979C16.8662 1.62055e-05 16.7576 0.0407947 16.6714 0.11526L15.673 0.978109C14.8977 0.256507 13.8576 -0.0915877 12.8152 0.020701C11.7722 0.133581 10.8269 0.696206 10.2158 1.56674C10.2054 1.58565 10.1962 1.60515 10.1892 1.62525C10.154 1.70089 10.1343 1.78304 10.1314 1.86637C10.1337 1.90538 10.1413 1.94438 10.1528 1.98162C10.1569 2.00112 10.1615 2.02062 10.1673 2.03894C10.1904 2.09568 10.2239 2.14768 10.2661 2.19201L14.7271 6.7858C14.8161 6.87799 14.9381 6.93 15.0647 6.93C15.1376 6.93118 15.2093 6.91168 15.2729 6.87445C15.2954 6.86499 15.3174 6.85435 15.3388 6.84135C16.1164 6.27991 16.6506 5.43183 16.8287 4.47561C17.0067 3.51938 16.8148 2.53006 16.2933 1.71567L17.1536 0.9722H19.8368C20.5623 0.972791 21.2584 1.2677 21.7712 1.7925C22.284 2.3173 22.5731 3.02826 22.5737 3.76996V14.7246C22.1979 14.5851 21.8013 14.5136 21.4018 14.513H12.888L14.2345 12.9658H20.1594C20.4224 12.9658 20.6352 12.7477 20.6352 12.4794C20.6352 12.2111 20.4218 11.993 20.1594 11.993H14.0206C13.8847 11.993 13.7552 12.0521 13.6651 12.1561L11.6138 14.5136H11.3912C11.0426 14.5136 10.7055 14.3842 10.4436 14.149L7.49855 11.5149C7.61071 11.2372 7.63962 10.9316 7.58238 10.6367C7.52514 10.3424 7.3835 10.0711 7.17652 9.85837L4.47774 7.09902C4.19792 6.81417 3.81981 6.65401 3.42494 6.65401C3.03006 6.65401 2.65138 6.81417 2.37213 7.09902L0.435922 9.07649C0.157256 9.36194 0 9.74904 0 10.1527C0 10.5563 0.156677 10.9434 0.435922 11.2289L3.13471 13.9882C3.41395 14.2743 3.79264 14.4344 4.18751 14.4338C4.22335 14.4338 4.25862 14.4262 4.29504 14.4232L8.07265 17.8982C8.58662 18.3704 9.22721 18.6736 9.91173 18.77V20.0299C9.91231 20.6322 10.1465 21.209 10.5633 21.6351C10.9801 22.0606 11.5444 22.3 12.1335 22.3011H15.2099L19.143 26.0729H7.62632C7.24763 26.0729 6.88456 26.2271 6.61688 26.5007C6.3492 26.7744 6.1983 27.1455 6.19772 27.5326V29.0272H4.63326C4.3702 29.0272 4.15745 29.2453 4.15745 29.5136C4.15745 29.7819 4.37078 30 4.63326 30H28.4563C28.7194 30 28.9321 29.7819 28.9321 29.5136C28.9321 29.2453 28.7194 29.0272 28.4563 29.0272H28.4569ZM15.0989 5.7882L11.2455 1.81968C11.7572 1.28188 12.4585 0.976928 13.1921 0.973382C13.9264 0.969245 14.6306 1.26711 15.1474 1.79959C15.6643 2.33207 15.9505 3.05427 15.9412 3.80424C15.932 4.55421 15.6284 5.26931 15.0989 5.7882ZM1.10888 10.5404C0.899595 10.3258 0.899595 9.97893 1.10888 9.7644L3.04278 7.78753C3.25265 7.57359 3.59202 7.57359 3.80246 7.78753L6.50125 10.5463C6.67585 10.7289 6.70244 11.012 6.56484 11.2247C6.54288 11.2389 6.52264 11.2549 6.50356 11.2726C6.47754 11.3069 6.45673 11.3441 6.44112 11.3843L4.56735 13.2997C4.35748 13.5137 4.01811 13.5137 3.80825 13.2997L1.10946 10.541L1.10888 10.5404ZM5.24263 13.9853L6.90884 12.282L9.8146 14.8812C10.2505 15.2719 10.8102 15.487 11.39 15.487H21.4012C22.0343 15.4864 22.6442 15.7311 23.1079 16.1719L27.7042 20.5347C27.9487 20.7669 28.0944 21.089 28.1083 21.4306C28.1227 21.7722 28.0042 22.1049 27.7799 22.3585C27.555 22.6114 27.2422 22.7633 26.9081 22.7816C26.5548 22.8029 26.2091 22.6699 25.9559 22.4164L22.0337 18.5241C21.588 18.0803 20.9902 17.832 20.3675 17.8332H10.387C9.76719 17.8332 9.16939 17.5992 8.70919 17.1749L5.24263 13.9859V13.9853ZM10.8634 20.0294V18.8066H20.3681C20.6756 18.8078 20.974 18.91 21.2197 19.0991L21.1931 20.066C21.1856 20.404 21.048 20.7255 20.8109 20.9614C20.5733 21.1972 20.2553 21.3284 19.9241 21.3266H12.133C11.7965 21.3266 11.4739 21.1895 11.2357 20.946C10.9975 20.7025 10.8639 20.3727 10.8634 20.0288V20.0294ZM16.6009 22.3005H19.9241C19.9385 22.3005 19.9518 22.2964 19.9657 22.2964L23.9034 26.0723H20.534L16.6009 22.3005ZM7.15051 27.5326C7.15051 27.2637 7.36384 27.0462 7.62632 27.0462H25.4644C25.7275 27.0462 25.9402 27.2643 25.9402 27.5326V29.0272H7.15108V27.5326H7.15051Z" fill="black"/>
+											</svg>
+									</div>
+									<span>Оборудование <br>стоматологическое и зуботехническое</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</aside>
+				<!-- /.aside -->
+
+				<div class="site-content">
+					
+					<section class="special flex items-center gap-[30px]">
+
+							<div class="swiper banners-slider max-w-[555px] flex-shrink-0">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<a href="#">
+											<img src="assets/img/banners/1.jpg" alt="ALT">
+										</a>
+									</div>
+									<a href="#">
+										<img src="assets/img/banners/1.jpg" alt="ALT">
+									</a>
+								</div>
+								<div class="swiper-button-prev banners-button-prev"><img src="assets/img/icons/arrow-left.svg" /></div>
+								<div class="swiper-button-next banners-button-next"><img src="assets/img/icons/arrow-right.svg" /></div>
+						</div>
+						<!-- /.banners-slider -->
+
+						<div class="flex-grow] text-blue-500">
+							<h2 class="font-bold uppercase mb-4">Специальные предложения</h2>
+							<ul class="space-y-[18px]">
+								<li class="list-item">
+									<a href="#" class="hover:underline">Полимеризационная лампа LED B (Woodpecker) по супер цене!</a>
+								</li>
+								<li class="list-item">
+									<a href="#" class="hover:underline">Полимеризационная лампа LED B (Woodpecker) по супер цене!</a>
+								</li>
+								<li class="list-item">
+									<a href="#" class="hover:underline">Полимеризационная лампа LED B (Woodpecker) по супер цене!</a>
+								</li>
+							</ul>
+						</div>
+
+					</section>
+
+				</div>
+				<!-- /.site-content -->
+
+			</div>
+			<!-- /.i-container -->
+		</div>
+		<!-- /.grid -->
+
+	</main>
+
 </body>
 
 </html>

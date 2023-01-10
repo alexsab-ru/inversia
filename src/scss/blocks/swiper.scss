@@ -1,27 +1,17 @@
-.swiper-scrollbar{
-	@apply w-[88%] sm:w-full left-[6%] sm:left-0 h-[5px] bg-D9 absolute rounded-[2px];
-	.swiper-scrollbar-drag{
-		@apply bg-green-500 absolute h-full rounded-[2px] cursor-grab;
-	}
-}
-
 .swiper-button-prev, .swiper-button-next{
 	@apply 
-	w-10 h-10 
-	rounded-full border-2 border-transparent 
-	transition-colors hover:border-9B
-	absolute top-1/2 -translate-y-5
+	w-10 h-10
+	flex items-center justify-center
+	transition-colors
+	absolute top-1/2 -translate-y-1/2
 	cursor-pointer
-	before:content-['']
-	before:w-[11px] before:h-[21px]
-	before:absolute before:left-1/2 before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2
-	before:bg-cover before:bg-center
+	z-10
 }
 .swiper-button-prev{
-	@apply -left-14 before:bg-[url(/assets/img/icons/slider-arrow-left.svg)];
+	@apply left-1;
 }
 .swiper-button-next{
-	@apply -right-14 before:bg-[url(/assets/img/icons/slider-arrow-right.svg)];
+	@apply right-1;
 }
 .swiper-button-disabled{
 	opacity: 0.7;

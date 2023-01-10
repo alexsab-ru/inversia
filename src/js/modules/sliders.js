@@ -3,17 +3,15 @@ import 'swiper/css';
 // import 'swiper/css/navigation';
 // import 'swiper/css/scrollbar';
 
-const bannerSlider = new Swiper('.banner-slider', {
-	modules: [Navigation, Mousewheel, Autoplay],
+const bannersSlider = new Swiper('.banners-slider', {
+	modules: [Navigation, Autoplay],
 	speed: 800,
+	loop: true,
 	autoplay: {
 		delay: 4000,
 	},
-	// mousewheel: {
-	// 	invert: false,
-	// },
 	navigation: {
-		nextEl: '.banner-button-next',
-		prevEl: '.banner-button-prev',
+		nextEl: '.banners-button-next',
+		prevEl: '.banners-button-prev',
 	},
 });
