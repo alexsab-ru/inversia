@@ -1,11 +1,11 @@
 .swiper-button-prev, .swiper-button-next{
 	@apply 
-	w-10 h-10
-	flex items-center justify-center
-	transition-colors
-	absolute top-1/2 -translate-y-1/2
-	cursor-pointer
-	z-10
+		w-10 h-10
+		flex items-center justify-center
+		transition-colors
+		absolute top-1/2 -translate-y-1/2
+		cursor-pointer
+		z-10
 }
 .swiper-button-prev{
 	@apply left-1;

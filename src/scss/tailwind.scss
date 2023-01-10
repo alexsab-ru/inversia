@@ -2,10 +2,8 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@layer base{
-	body {
-		@apply font-light text-[14px] leading-[16px] text-black
-	}
+body {
+	@apply font-light text-[14px] leading-[16px] text-black
 }
 
 .i-container{
