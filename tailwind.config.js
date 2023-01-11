@@ -2,7 +2,7 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-	content: ['./*.html', './src/js/**/*.js'],
+	content: ['./index.html', './src/js/**/*.{js}'],
 	darkMode: 'class',
 	theme: {
 		container: {
@@ -10,11 +10,10 @@ module.exports = {
 			padding: '1.25rem',
 		},
 		screens: {
-			'sm': '640px',
+			'sm': '587px',
 			'md': '768px',
 			'lg': '1024px',
 			'xl': '1180px',
-			'2xl': '1180px',
 		},
 		colors: {
 			blue: {

@@ -1,8 +1,9 @@
 .aside-menu{
+	@apply space-y-4;
 	a{
 		@apply text-[12px] flex items-center;
 		.icon{
-			@apply w-[70px] flex justify-center relative;
+			@apply w-[70px] flex justify-center relative flex-shrink-0;
 			.circle{
 				@apply absolute w-7 h-7 rounded-full bg-blue-300 -z-[1] duration-300;
 			}

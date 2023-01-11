@@ -10,32 +10,36 @@
 	<script src="assets/js/app.min.js" defer></script>
 </head>
 
-<body>
+<body class="pb-[60px] sm:pb-0">
 
 	<div class="top-line sticky w-full left-0 top-0 bg-blue-500 text-white z-50">
 		<div class="i-container">
 			
 			<div class="flex items-center justify-between">
+
+				<a href="#" class="flex-shrink-0 max-w-[180px] lg:hidden order-1">
+					<img src="assets/img/logo-white.svg" alt="Инверсия">
+				</a>
 	
-				<div class="relative group">
-					<a href="#" class="flex items-center gap-1.5 h-[50px] !leading-none relative">
+				<div class="relative group order-3 lg:order-1">
+					<div class="flex items-center gap-1.5 h-[70px] lg:h-[50px] !leading-none relative">
 						<img src="assets/img/icons/location.svg" class="-mt-1" />
 						<span>Самара</span>
 						<img src="assets/img/icons/arrow-down-white.svg" />
-					</a>
-					<div class="absolute left-0 top-full bg-white rounded shadow-xl text-gray-300 min-w-full w-fit opacity-0 invisible transition-all duration-300 group-hover:opacity-100 group-hover:visible">
+					</div>
+					<div class="absolute right-0 sm:right-auto sm:left-0 top-full bg-white rounded shadow-xl text-gray-300 min-w-full w-fit opacity-0 invisible transition-all duration-300 group-hover:opacity-100 group-hover:visible">
 						<a href="#" class="block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Москва</a>
 						<a href="#" class="block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Пермь</a>
 						<a href="#" class="block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Новосибирск</a>
 					</div>
 				</div>
 	
-				<ul class="flex">
+				<ul class="hidden sm:flex order-2">
 					<li class="relative group">
-						<a href="#" class="px-3.5 flex items-center gap-1.5 h-[50px] transition-colors duration-300 ease-in-out hover:bg-white/10">
+						<div class="px-3.5 flex items-center gap-1.5 h-[70px] lg:h-[50px] transition-colors duration-300 ease-in-out lg:hover:bg-white/10">
 							<span>Покупателям</span>
 							<img src="assets/img/icons/arrow-down-white.svg" />
-						</a>
+						</div>
 						<ul class="absolute left-0 top-full bg-white rounded shadow-xl text-gray-300 min-w-full w-fit opacity-0 invisible transition-all duration-300 group-hover:opacity-100 group-hover:visible">
 							<li><a href="#" class="block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Ссылка #1</a></li>
 							<li><a href="#" class="block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Ссылка #2</a></li>
@@ -44,10 +48,10 @@
 						</ul>
 					</li>
 					<li class="relative group">
-						<a href="#" class="px-3.5 flex items-center gap-1.5 h-[50px] transition-colors duration-300 ease-in-out hover:bg-white/10">
+						<div class="px-3.5 flex items-center gap-1.5 h-[70px] lg:h-[50px] transition-colors duration-300 ease-in-out lg:hover:bg-white/10">
 							<span>О компании</span>
 							<img src="assets/img/icons/arrow-down-white.svg" />
-						</a>
+						</div>
 						<ul class="absolute left-0 top-full bg-white rounded shadow-xl text-gray-300 min-w-full w-fit opacity-0 invisible transition-all duration-300 group-hover:opacity-100 group-hover:visible">
 							<li><a href="#" class="block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Ссылка #1</a></li>
 							<li><a href="#" class="block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Ссылка #2</a></li>
@@ -60,7 +64,7 @@
 					</li>
 				</ul>
 	
-				<div class="flex gap-7">
+				<div class="hidden lg:flex gap-7 order-3">
 					<span>пр. Ленина, д.10</span>
 					<span><a href="tel:+78463738000" class="transition duration-300 hover:underline">8 (846) 37 38 000</a></span>
 					<span>Пн-Пт: 9:00-18:00 | Сб: 9:00-14:00</span>
@@ -77,14 +81,14 @@
 		<div class="i-container">
 			<div class="header-wrap flex items-center justify-between gap-x-[30px] py-10">
 
-				<a href="#" class="flex-shrink-0 max-w-[260px]">
+				<a href="#" class="flex-shrink-0 max-w-[260px] hidden lg:block">
 					<img src="assets/img/logo.svg" alt="Инверсия">
 				</a>
 
 				<div class="flex-grow">
 					<form class="search-form">
 						<div class="relative">
-							<input type="text" name="search" class="w-full border border-gray-300 rounded pl-4 pr-16 py-[26px] text-[14px] leading-none placeholder:text-gray-300 duration-300 focus:outline-0 focus:border-blue-500" placeholder="Поиск">
+							<input type="text" name="search" class="w-full border border-gray-300 rounded pl-4 pr-16 py-4 sm:py-[26px] text-[14px] leading-none placeholder:text-gray-300 duration-300 focus:outline-0 focus:border-blue-500" placeholder="Поиск">
 							<button type="submit" class="absolute right-5 top-1/2 -translate-y-1/2">
 								<img src="assets/img/icons/search.svg" class="w-[30px]" alt="Поиск">
 							</button>
@@ -92,7 +96,7 @@
 					</for>
 				</div>
 
-				<div class="flex-shrink-0 flex items-center gap-[50px]">
+				<div class="flex-shrink-0 hidden sm:flex items-center gap-8 xl:gap-[50px]">
 					<a href="#" class="flex flex-col items-center gap-[7px] duration-300 hover:text-blue-500 group">
 						<div class="icon">
 							<svg class="stroke-gray-300 duration-300 group-hover:stroke-blue-500" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.1864 5.11219L15.5 5.59063L15.8136 5.11219C17.3453 2.77566 20.0261 1.2251 22.7553 1.2251C27.0523 1.2251 30.6256 5.19129 30.625 10.1615V10.1615C30.625 14.2313 28.3501 18.2291 25.3265 21.7352C22.31 25.233 18.5938 28.189 15.8094 30.1694L15.8092 30.1695L15.5 30.3897L15.1908 30.1695L15.1906 30.1694C12.4062 28.189 8.68995 25.233 5.67351 21.7352C2.64986 18.2291 0.375 14.2313 0.375 10.1615C0.375 5.19124 3.94716 1.2251 8.24472 1.2251C10.9739 1.2251 13.6547 2.77566 15.1864 5.11219Z" stroke-width="0.75"/></svg>
@@ -122,49 +126,305 @@
 
 	<main>
 
-		<div class="i-container">
-			<div class="flex gap-[30px]">
+		<div class="i-container !px-0 sm:!px-5">
 
-				<aside class="aside flex-shrink-0 h-[800px] w-[260px] sticky top-[50px] left-0 bg-gray-100 py-5 pr-5">
+			<div class="swiper categories-mobile-slider !pb-5 !mb-7 !px-2 sm:!px-0 lg:hidden">
+				<div class="swiper-wrapper">
+
+					<div class="swiper-slide">
+						<a href="#" class="category-link">
+							<div class="icon">
+								<img src="assets/img/icons/nav/1.svg" />
+							</div>
+							<span>Оборудование стоматологическое и зуботехническое</span>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#" class="category-link">
+							<div class="icon">
+								<img src="assets/img/icons/nav/2.svg" />
+							</div>
+							<span>Анестезия, иглы карпульные</span>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#" class="category-link">
+							<div class="icon">
+								<img src="assets/img/icons/nav/3.svg" />
+							</div>
+							<span>Вспомогательные материалы и средства защиты</span>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#" class="category-link">
+							<div class="icon">
+								<img src="assets/img/icons/nav/4.svg" />
+							</div>
+							<span>Терапия</span>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#" class="category-link">
+							<div class="icon">
+								<img src="assets/img/icons/nav/5.svg" />
+							</div>
+							<span>Ортопедия</span>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#" class="category-link">
+							<div class="icon">
+								<img src="assets/img/icons/nav/6.svg" />
+							</div>
+							<span>Эндодонтия</span>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#" class="category-link">
+							<div class="icon">
+								<img src="assets/img/icons/nav/7.svg" />
+							</div>
+							<span>Дары Алтая</span>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#" class="category-link">
+							<div class="icon">
+								<img src="assets/img/icons/nav/8.svg" />
+							</div>
+							<span>Ортодонтия</span>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#" class="category-link">
+							<div class="icon">
+								<img src="assets/img/icons/nav/9.svg" />
+							</div>
+							<span>Зуботехнические материалы и инструменты</span>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#" class="category-link">
+							<div class="icon">
+								<img src="assets/img/icons/nav/10.svg" />
+							</div>
+							<span>Вращающийся инструмент</span>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#" class="category-link">
+							<div class="icon">
+								<img src="assets/img/icons/nav/11.svg" />
+							</div>
+							<span>Системы для шлифования и полирования</span>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#" class="category-link">
+							<div class="icon">
+								<img src="assets/img/icons/nav/12.svg" />
+							</div>
+							<span>Штифты и обтураторы</span>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#" class="category-link">
+							<div class="icon">
+								<img src="assets/img/icons/nav/13.svg" />
+							</div>
+							<span>Инструментарий, шовный материал</span>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#" class="category-link">
+							<div class="icon">
+								<img src="assets/img/icons/nav/14.svg" />
+							</div>
+							<span>Металлокерамика</span>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#" class="category-link">
+							<div class="icon">
+								<img src="assets/img/icons/nav/15.svg" />
+							</div>
+							<span>Импланты</span>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#" class="category-link">
+							<div class="icon">
+								<img src="assets/img/icons/nav/16.svg" />
+							</div>
+							<span>Рентген оборудование и материалы</span>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#" class="category-link">
+							<div class="icon">
+								<img src="assets/img/icons/nav/17.svg" />
+							</div>
+							<span>Скайсы</span>
+						</a>
+					</div>
+
+				</div>
+				<!-- /.swiper-wrapper -->
+				<div class="swiper-scrollbar categories-mobile-scrollbar"></div>
+			</div>
+			<!-- /.swiper categories-mobile-slider -->
+
+			<div class="lg:flex items-start gap-[30px]">
+
+				<aside class="aside hidden lg:block flex-shrink-0 h-fit w-[260px] sticky top-[50px] left-0 bg-gray-100 py-5 pr-4">
 					<nav class="aside-menu">
-						<ul>
-							<li>
-								<a href="#" class="group">
-									<div class="icon">
-										<div class="circle opacity-0 group-hover:opacity-100"></div>
-										<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M28.4569 29.0272H26.8924V27.5326C26.8924 27.1455 26.7416 26.7744 26.4739 26.5007C26.2062 26.2271 25.8431 26.0729 25.4644 26.0723H25.2956L21.0381 21.9891C21.7059 21.5984 22.1251 20.8798 22.1453 20.0938L22.1482 19.9933L25.2933 23.1138C25.709 23.5257 26.2646 23.7556 26.8433 23.7562C26.882 23.7562 26.9208 23.755 26.9595 23.7532C27.5434 23.7213 28.0921 23.4548 28.4852 23.0121C28.8784 22.5694 29.0854 21.9861 29.0605 21.3886C29.0356 20.7911 28.7818 20.2279 28.3528 19.8207L23.7566 15.458C23.6826 15.3877 23.6051 15.3221 23.5265 15.2589V3.77114C23.5253 2.77118 23.1362 1.81259 22.4448 1.10576C21.7522 0.398936 20.8144 0.00119819 19.8368 1.62055e-05H16.979C16.8662 1.62055e-05 16.7576 0.0407947 16.6714 0.11526L15.673 0.978109C14.8977 0.256507 13.8576 -0.0915877 12.8152 0.020701C11.7722 0.133581 10.8269 0.696206 10.2158 1.56674C10.2054 1.58565 10.1962 1.60515 10.1892 1.62525C10.154 1.70089 10.1343 1.78304 10.1314 1.86637C10.1337 1.90538 10.1413 1.94438 10.1528 1.98162C10.1569 2.00112 10.1615 2.02062 10.1673 2.03894C10.1904 2.09568 10.2239 2.14768 10.2661 2.19201L14.7271 6.7858C14.8161 6.87799 14.9381 6.93 15.0647 6.93C15.1376 6.93118 15.2093 6.91168 15.2729 6.87445C15.2954 6.86499 15.3174 6.85435 15.3388 6.84135C16.1164 6.27991 16.6506 5.43183 16.8287 4.47561C17.0067 3.51938 16.8148 2.53006 16.2933 1.71567L17.1536 0.9722H19.8368C20.5623 0.972791 21.2584 1.2677 21.7712 1.7925C22.284 2.3173 22.5731 3.02826 22.5737 3.76996V14.7246C22.1979 14.5851 21.8013 14.5136 21.4018 14.513H12.888L14.2345 12.9658H20.1594C20.4224 12.9658 20.6352 12.7477 20.6352 12.4794C20.6352 12.2111 20.4218 11.993 20.1594 11.993H14.0206C13.8847 11.993 13.7552 12.0521 13.6651 12.1561L11.6138 14.5136H11.3912C11.0426 14.5136 10.7055 14.3842 10.4436 14.149L7.49855 11.5149C7.61071 11.2372 7.63962 10.9316 7.58238 10.6367C7.52514 10.3424 7.3835 10.0711 7.17652 9.85837L4.47774 7.09902C4.19792 6.81417 3.81981 6.65401 3.42494 6.65401C3.03006 6.65401 2.65138 6.81417 2.37213 7.09902L0.435922 9.07649C0.157256 9.36194 0 9.74904 0 10.1527C0 10.5563 0.156677 10.9434 0.435922 11.2289L3.13471 13.9882C3.41395 14.2743 3.79264 14.4344 4.18751 14.4338C4.22335 14.4338 4.25862 14.4262 4.29504 14.4232L8.07265 17.8982C8.58662 18.3704 9.22721 18.6736 9.91173 18.77V20.0299C9.91231 20.6322 10.1465 21.209 10.5633 21.6351C10.9801 22.0606 11.5444 22.3 12.1335 22.3011H15.2099L19.143 26.0729H7.62632C7.24763 26.0729 6.88456 26.2271 6.61688 26.5007C6.3492 26.7744 6.1983 27.1455 6.19772 27.5326V29.0272H4.63326C4.3702 29.0272 4.15745 29.2453 4.15745 29.5136C4.15745 29.7819 4.37078 30 4.63326 30H28.4563C28.7194 30 28.9321 29.7819 28.9321 29.5136C28.9321 29.2453 28.7194 29.0272 28.4563 29.0272H28.4569ZM15.0989 5.7882L11.2455 1.81968C11.7572 1.28188 12.4585 0.976928 13.1921 0.973382C13.9264 0.969245 14.6306 1.26711 15.1474 1.79959C15.6643 2.33207 15.9505 3.05427 15.9412 3.80424C15.932 4.55421 15.6284 5.26931 15.0989 5.7882ZM1.10888 10.5404C0.899595 10.3258 0.899595 9.97893 1.10888 9.7644L3.04278 7.78753C3.25265 7.57359 3.59202 7.57359 3.80246 7.78753L6.50125 10.5463C6.67585 10.7289 6.70244 11.012 6.56484 11.2247C6.54288 11.2389 6.52264 11.2549 6.50356 11.2726C6.47754 11.3069 6.45673 11.3441 6.44112 11.3843L4.56735 13.2997C4.35748 13.5137 4.01811 13.5137 3.80825 13.2997L1.10946 10.541L1.10888 10.5404ZM5.24263 13.9853L6.90884 12.282L9.8146 14.8812C10.2505 15.2719 10.8102 15.487 11.39 15.487H21.4012C22.0343 15.4864 22.6442 15.7311 23.1079 16.1719L27.7042 20.5347C27.9487 20.7669 28.0944 21.089 28.1083 21.4306C28.1227 21.7722 28.0042 22.1049 27.7799 22.3585C27.555 22.6114 27.2422 22.7633 26.9081 22.7816C26.5548 22.8029 26.2091 22.6699 25.9559 22.4164L22.0337 18.5241C21.588 18.0803 20.9902 17.832 20.3675 17.8332H10.387C9.76719 17.8332 9.16939 17.5992 8.70919 17.1749L5.24263 13.9859V13.9853ZM10.8634 20.0294V18.8066H20.3681C20.6756 18.8078 20.974 18.91 21.2197 19.0991L21.1931 20.066C21.1856 20.404 21.048 20.7255 20.8109 20.9614C20.5733 21.1972 20.2553 21.3284 19.9241 21.3266H12.133C11.7965 21.3266 11.4739 21.1895 11.2357 20.946C10.9975 20.7025 10.8639 20.3727 10.8634 20.0288V20.0294ZM16.6009 22.3005H19.9241C19.9385 22.3005 19.9518 22.2964 19.9657 22.2964L23.9034 26.0723H20.534L16.6009 22.3005ZM7.15051 27.5326C7.15051 27.2637 7.36384 27.0462 7.62632 27.0462H25.4644C25.7275 27.0462 25.9402 27.2643 25.9402 27.5326V29.0272H7.15108V27.5326H7.15051Z" fill="black"/>
-											</svg>
-									</div>
-									<span>Оборудование <br>стоматологическое и зуботехническое</span>
-								</a>
-							</li>
-						</ul>
+						<a href="#" class="group">
+							<div class="icon">
+								<div class="circle opacity-0 group-hover:opacity-100"></div>
+								<img src="assets/img/icons/nav/1.svg" />
+							</div>
+							<span>Оборудование <br>стоматологическое и зуботехническое</span>
+						</a>
+						<a href="#" class="group">
+							<div class="icon">
+								<div class="circle opacity-0 group-hover:opacity-100"></div>
+								<img src="assets/img/icons/nav/2.svg" />
+							</div>
+							<span>Анестезия, иглы карпульные</span>
+						</a>
+						<a href="#" class="group">
+							<div class="icon">
+								<div class="circle opacity-0 group-hover:opacity-100"></div>
+								<img src="assets/img/icons/nav/3.svg" />
+							</div>
+							<span>Вспомогательные <br>материалы и средства защиты</span>
+						</a>
+						<a href="#" class="group">
+							<div class="icon">
+								<div class="circle opacity-0 group-hover:opacity-100"></div>
+								<img src="assets/img/icons/nav/4.svg" />
+							</div>
+							<span>Терапия</span>
+						</a>
+						<a href="#" class="group">
+							<div class="icon">
+								<div class="circle opacity-0 group-hover:opacity-100"></div>
+								<img src="assets/img/icons/nav/5.svg" />
+							</div>
+							<span>Ортопедия</span>
+						</a>
+						<a href="#" class="group">
+							<div class="icon">
+								<div class="circle opacity-0 group-hover:opacity-100"></div>
+								<img src="assets/img/icons/nav/6.svg" />
+							</div>
+							<span>Эндодонтия</span>
+						</a>
+						<a href="#" class="group">
+							<div class="icon">
+								<div class="circle opacity-0 group-hover:opacity-100"></div>
+								<img src="assets/img/icons/nav/7.svg" />
+							</div>
+							<span>Дары Алтая</span>
+						</a>
+						<a href="#" class="group">
+							<div class="icon">
+								<div class="circle opacity-0 group-hover:opacity-100"></div>
+								<img src="assets/img/icons/nav/8.svg" />
+							</div>
+							<span>Ортодонтия</span>
+						</a>
+						<a href="#" class="group">
+							<div class="icon">
+								<div class="circle opacity-0 group-hover:opacity-100"></div>
+								<img src="assets/img/icons/nav/9.svg" />
+							</div>
+							<span>Зуботехнические материалы<br>и инструменты</span>
+						</a>
+						<a href="#" class="group">
+							<div class="icon">
+								<div class="circle opacity-0 group-hover:opacity-100"></div>
+								<img src="assets/img/icons/nav/10.svg" />
+							</div>
+							<span>Вращающийся инструмент</span>
+						</a>
+						<a href="#" class="group">
+							<div class="icon">
+								<div class="circle opacity-0 group-hover:opacity-100"></div>
+								<img src="assets/img/icons/nav/11.svg" />
+							</div>
+							<span>Системы для шлифования<br>и полирования</span>
+						</a>
+						<a href="#" class="group">
+							<div class="icon">
+								<div class="circle opacity-0 group-hover:opacity-100"></div>
+								<img src="assets/img/icons/nav/12.svg" />
+							</div>
+							<span>Штифты и обтураторы</span>
+						</a>
+						<a href="#" class="group">
+							<div class="icon">
+								<div class="circle opacity-0 group-hover:opacity-100"></div>
+								<img src="assets/img/icons/nav/13.svg" />
+							</div>
+							<span>Инструментарий, <br>шовный материал</span>
+						</a>
+						<a href="#" class="group">
+							<div class="icon">
+								<div class="circle opacity-0 group-hover:opacity-100"></div>
+								<img src="assets/img/icons/nav/14.svg" />
+							</div>
+							<span>Металлокерамика</span>
+						</a>
+						<a href="#" class="group">
+							<div class="icon">
+								<div class="circle opacity-0 group-hover:opacity-100"></div>
+								<img src="assets/img/icons/nav/15.svg" />
+							</div>
+							<span>Импланты</span>
+						</a>
+						<a href="#" class="group">
+							<div class="icon">
+								<div class="circle opacity-0 group-hover:opacity-100"></div>
+								<img src="assets/img/icons/nav/16.svg" />
+							</div>
+							<span>Рентген оборудование<br> и материалы</span>
+						</a>
+						<a href="#" class="group">
+							<div class="icon">
+								<div class="circle opacity-0 group-hover:opacity-100"></div>
+								<img src="assets/img/icons/nav/17.svg" />
+							</div>
+							<span>Скайсы</span>
+						</a>
 					</nav>
 				</aside>
 				<!-- /.aside -->
 
-				<div class="site-content">
+				<div class="site-content flex-grow">
 					
-					<section class="special flex items-center gap-[30px]">
+					<section class="special xl:flex items-center gap-[30px]">
 
-							<div class="swiper banners-slider max-w-[555px] flex-shrink-0">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<a href="#">
-											<img src="assets/img/banners/1.jpg" alt="ALT">
-										</a>
-									</div>
+						<div class="swiper banners-slider lg:max-w-[694px] xl:max-w-[555px] flex-shrink-0 mb-10 xl:mb-0 !pb-5 sm:!pb-0">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
 									<a href="#">
-										<img src="assets/img/banners/1.jpg" alt="ALT">
+										<img src="assets/img/banners/1.png" class="max-w-full w-full h-auto" alt="ALT">
 									</a>
 								</div>
-								<div class="swiper-button-prev banners-button-prev"><img src="assets/img/icons/arrow-left.svg" /></div>
-								<div class="swiper-button-next banners-button-next"><img src="assets/img/icons/arrow-right.svg" /></div>
+								<div class="swiper-slide">
+									<a href="#">
+										<img src="assets/img/banners/2.png" class="max-w-full w-full h-auto" alt="ALT">
+									</a>
+								</div>
+							</div>
+							<div class="swiper-button-prev banners-button-prev"><img src="assets/img/icons/arrow-left.svg" /></div>
+							<div class="swiper-button-next banners-button-next"><img src="assets/img/icons/arrow-right.svg" /></div>
+							<div class="swiper-pagination banners-pagination"></div>
 						</div>
 						<!-- /.banners-slider -->
 
-						<div class="flex-grow] text-blue-500">
+						<div class="flex-grow] text-blue-500 px-5 sm:px-0">
 							<h2 class="font-bold uppercase mb-4">Специальные предложения</h2>
 							<ul class="space-y-[18px]">
 								<li class="list-item">
@@ -181,6 +441,8 @@
 
 					</section>
 
+					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 				</div>
 				<!-- /.site-content -->
 
@@ -190,6 +452,39 @@
 		<!-- /.grid -->
 
 	</main>
+
+	<div class="bottom-menu w-full fixed bottom-0 left-0 bg-blue-500 flex items-center justify-center z-50">
+		<a href="#" class="flex flex-col items-center justify-center gap-[7px] text-white text-[10px] leading-[12px] px-2.5 h-[60px]">
+			<div class="icon">
+				<img src="assets/img/icons/bottom-menu/home.png" class="w-5" alt="Главная">
+			</div>
+			<span>Главная</span>
+		</a>
+		<a href="#" class="flex flex-col items-center justify-center gap-[7px] text-white text-[10px] leading-[12px] px-2.5 h-[60px]">
+			<div class="icon">
+				<svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.5961 3.49902L12 4.05271L12.4039 3.49902C13.4929 2.00626 15.4158 1 17.383 1C20.4726 1 23.0004 3.55472 23 6.70754V6.70761C23 9.31161 21.3743 11.9131 19.1406 14.2405C16.9212 16.5529 14.1811 18.5123 12.1216 19.8286L12.1213 19.8288L12 19.9064L11.8787 19.8288L11.8784 19.8286C9.81886 18.5123 7.07883 16.5529 4.85942 14.2405C2.62568 11.9131 1 9.31161 1 6.70761C1 3.55465 3.52709 1 6.61705 1C8.58423 1 10.5071 2.00626 11.5961 3.49902Z" stroke="white"/></svg>
+			</div>
+			<span>Избранное</span>
+		</a>
+		<a href="#" class="flex flex-col items-center justify-center gap-[7px] text-white text-[10px] leading-[12px] px-2.5 h-[60px] bg-white/10">
+			<div class="icon">
+				<svg width="28" height="21" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16.9355" cy="10.4355" r="5.43549" stroke="white"/><path d="M20.6001 14.8999L27.0001 20.5" stroke="white"/><path d="M0 1L20 1" stroke="white"/><path d="M0 10.5L8 10.5" stroke="white"/><path d="M0 20L15 20" stroke="white"/></svg>
+			</div>
+			<span>Каталог</span>
+		</a>
+		<a href="#" class="flex flex-col items-center justify-center gap-[7px] text-white text-[10px] leading-[12px] px-2.5 h-[60px]">
+			<div class="icon">
+				<svg width="26" height="21" viewBox="0 0 26 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.3122 7.51689L20.3271 7.5383H20.3532H25.2262C25.5336 7.5383 25.7854 7.79005 25.7854 8.09749C25.7854 8.40493 25.5336 8.65668 25.2262 8.65668H23.5509H23.5124L23.5026 8.69396L20.5785 19.8117L20.5784 19.8117L20.578 19.8135C20.5225 20.0636 20.3001 20.2313 20.0481 20.2313H6.03675C5.78476 20.2313 5.56239 20.0636 5.50683 19.8135L5.50687 19.8135L5.50638 19.8117L2.58282 8.69397L2.57301 8.65668H2.53446H0.859189C0.551749 8.65668 0.3 8.40493 0.3 8.09749C0.3 7.79005 0.551749 7.5383 0.859189 7.5383H5.7327H5.7589L5.77381 7.51676L10.4341 0.785228L10.4346 0.784499C10.6006 0.535528 10.9647 0.477129 11.2181 0.646069C11.467 0.811966 11.5254 1.17582 11.3568 1.42921C11.3567 1.42934 11.3566 1.42947 11.3566 1.4296L7.15367 7.49027L7.09924 7.56876H7.19476H18.8607H18.9562L18.9018 7.49027L14.6989 1.4296C14.6988 1.42947 14.6988 1.42934 14.6987 1.42921C14.53 1.17582 14.5885 0.811966 14.8374 0.646069C15.0908 0.477129 15.4549 0.535528 15.6209 0.784498L15.6209 0.784504L15.6215 0.785349L20.3122 7.51689ZM19.5918 19.1129H19.6304L19.6401 19.0756L22.351 8.71934L22.3674 8.65668H22.3026H3.7833H3.71852L3.73493 8.71934L6.44582 19.0756L6.45559 19.1129H6.49419H19.5918Z" fill="white" stroke="#247CB8" stroke-width="0.1"/><path d="M10.2519 16.9306C10.2519 17.238 10.0001 17.4898 9.69269 17.4898C9.38525 17.4898 9.1335 17.238 9.1335 16.9306V10.8387C9.1335 10.5312 9.38525 10.2795 9.69269 10.2795C10.0001 10.2795 10.2519 10.5312 10.2519 10.8387V16.9306Z" fill="white" stroke="#247CB8" stroke-width="0.1"/><path d="M13.602 16.9306C13.602 17.238 13.3502 17.4898 13.0428 17.4898C12.7353 17.4898 12.4836 17.238 12.4836 16.9306V10.8387C12.4836 10.5312 12.7353 10.2795 13.0428 10.2795C13.3502 10.2795 13.602 10.5312 13.602 10.8387V16.9306Z" fill="white" stroke="#247CB8" stroke-width="0.1"/><path d="M16.9526 16.9306C16.9526 17.238 16.7008 17.4898 16.3934 17.4898C16.0859 17.4898 15.8342 17.238 15.8342 16.9306V10.8387C15.8342 10.5312 16.0859 10.2795 16.3934 10.2795C16.7008 10.2795 16.9526 10.5312 16.9526 10.8387V16.9306Z" fill="white" stroke="#247CB8" stroke-width="0.1"/></svg>
+			</div>
+			<span>Корзина</span>
+		</a>
+		<a href="#" class="flex flex-col items-center justify-center gap-[7px] text-white text-[10px] leading-[12px] px-2.5 h-[60px]">
+			<div class="icon">
+				<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.7326 6.32021C15.7326 9.44635 13.1885 11.9904 10.0624 11.9904C6.93626 11.9904 4.39219 9.44635 4.39219 6.32021C4.39219 3.19407 6.93626 0.65 10.0624 0.65C13.1885 0.65 15.7326 3.19407 15.7326 6.32021ZM14.4806 6.32021C14.4806 3.88307 12.4995 1.90206 10.0624 1.90206C7.62526 1.90206 5.64424 3.88307 5.64424 6.32021C5.64424 8.75736 7.62526 10.7384 10.0624 10.7384C12.4995 10.7384 14.4806 8.75736 14.4806 6.32021Z" fill="white" stroke="#247CB8" stroke-width="0.3"/><path d="M19.2247 19.9008V20.5268H0.9V19.9008C0.9 16.5544 2.70851 13.626 5.39907 12.0269C5.76386 12.3259 6.15708 12.5878 6.57491 12.8115C4.18481 13.9909 2.46751 16.338 2.19212 19.1099L2.17574 19.2747H2.34138H17.7859H17.9516L17.9352 19.1099C17.6597 16.3375 15.9418 13.99 13.551 12.8108C13.9677 12.5865 14.3626 12.3261 14.7282 12.0269C17.4162 13.626 19.2247 16.5544 19.2247 19.9008Z" fill="white" stroke="#247CB8" stroke-width="0.3"/></svg>
+			</div>
+			<span>Профиль</span>
+		</a>
+	</div>
 
 </body>
 
