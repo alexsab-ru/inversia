@@ -32,25 +32,34 @@ const bannersSlider = new Swiper('.banners-slider', {
 	}
 });
 
-const catSlider = new Swiper('.categories-mobile-slider', {
-	modules: [FreeMode, Scrollbar],
-	freeMode: true,
-	scrollbar: {
-		el: '.categories-mobile-scrollbar',
-		draggable: true,
-	},
-	breakpoints: {
-		320: {
-			slidesPerView: 7,
-			spaceBetween: 20,
-		},
-		587: {
-			slidesPerView: 9,
-			spaceBetween: 20
-		},
-		768: {
-			slidesPerView: 12,
-			spaceBetween: 20
-		}
+// const catSlider = new Swiper('.categories-mobile-slider', {
+// 	modules: [FreeMode, Scrollbar],
+// 	freeMode: true,
+// 	scrollbar: {
+// 		el: '.categories-mobile-scrollbar',
+// 		draggable: true,
+// 	},
+// 	breakpoints: {
+// 		320: {
+// 			slidesPerView: 7,
+// 			spaceBetween: 20,
+// 		},
+// 		587: {
+// 			slidesPerView: 9,
+// 			spaceBetween: 20
+// 		},
+// 		768: {
+// 			slidesPerView: 12,
+// 			spaceBetween: 20
+// 		}
+// 	}
+// })
+
+const scrollbar = document.querySelector('.custom-scrollbar');
+scrollbar.addEventListener('scroll', function(e) {
+	if(this.scrollHeight < this.scrollTop + this.clientHeight + 10){
+		this.closest('.categories-mobile-list').classList.add('end');
+	}else{
+		this.closest('.categories-mobile-list').classList.remove('end');
 	}
 })
