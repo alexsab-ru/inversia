@@ -7,7 +7,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 	<title>Инверсия</title>
 	<link rel="stylesheet" href="assets/css/styles.min.css">
-	<script src="assets/js/app.min.js" defer></script>
 </head>
 
 <body class="pb-[60px] sm:pb-0">
@@ -403,7 +402,7 @@
 					
 					<section class="special xl:flex items-center gap-[30px] pt-0">
 
-						<div class="swiper banners-slider lg:max-w-[694px] xl:max-w-[555px] flex-shrink-0 mb-10 xl:mb-0 !pb-5 sm:!pb-0">
+						<div class="swiper banners-slider lg:w-[694px] xl:w-[555px] flex-shrink-0 mb-10 xl:mb-0 !pb-5 sm:!pb-0">
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
 									<a href="#">
@@ -416,8 +415,8 @@
 									</a>
 								</div>
 							</div>
-							<div class="swiper-button-prev banners-button-prev"><img src="assets/img/icons/arrow-left.svg" /></div>
-							<div class="swiper-button-next banners-button-next"><img src="assets/img/icons/arrow-right.svg" /></div>
+							<div class="swiper-button-prev banners-button-prev !hidden"><img src="assets/img/icons/arrow-left.svg" /></div>
+							<div class="swiper-button-next banners-button-next !hidden"><img src="assets/img/icons/arrow-right.svg" /></div>
 							<div class="swiper-pagination banners-pagination"></div>
 						</div>
 						<!-- /.banners-slider -->
@@ -601,23 +600,51 @@
 									</div>
 								</div>
 
-								<div class="swiper-slide !h-auto md:!mb-7">
-									<div class="hit-item sm:px-3 pb-[55px] h-full relative">
-										<a href="#" class="flex items-center justify-center h-[120px] sm:h-[150px] mb-2">
-											<img src="assets/img/hits/6.jpg" alt="ALT" class="max-h-full w-auto">
-										</a>
-										<h3><a href="#" class="block text-center text-xs duration-300 hover:underline line-clamp-4 sm:line-clamp-none">СДР Плюс/SDR Plus - жидкотек. композит. материал (компьюлы) 0,25гр х 110шт</a></h3>
-										<div class="hit-info absolute left-0 bottom-0 w-full">
-											<div class="flex justify-center gap-2 font-bold text-xs sm:text-[14px]">
-												<s class="text-gray-300">28&nbsp;000&nbsp;₽</s>
-												<div>25&nbsp;200&nbsp;₽</div>
-											</div>
-											<div class="flex items-center justify-center gap-3">
-												<button class="group mt-1"><svg class="stroke-gray-300 duration-300 group-hover:stroke-blue-500" width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.197 2.92535L11.5 3.34062L11.803 2.92535C12.9155 1.40028 14.8759 0.375 16.883 0.375C20.0433 0.375 22.6254 2.98741 22.625 6.20756V6.20761C22.625 8.86137 20.9707 11.4931 18.7308 13.827C16.5015 16.1497 13.7522 18.1153 11.6889 19.4339L11.6887 19.4341L11.5 19.5548L11.3113 19.4341L11.3111 19.4339C9.2478 18.1153 6.49846 16.1497 4.26923 13.827C2.02927 11.4931 0.375 8.86137 0.375 6.20761C0.375 2.98736 2.95632 0.375 6.11705 0.375C8.12409 0.375 10.0845 1.40028 11.197 2.92535Z" stroke-width="0.75"/></svg></button>
-												<button class="group"><svg class="w-[28px] fill-gray-300 duration-300 group-hover:fill-blue-500" width="41" height="32" viewBox="0 0 41 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M31.2995 11.4447L31.3741 11.5517H31.5046H39.1412C39.5282 11.5517 39.8459 11.8694 39.8459 12.2564C39.8459 12.6434 39.5282 12.9611 39.1412 12.9611H36.5158H36.3231L36.274 13.1475L31.6915 30.5705L31.6914 30.5704L31.6893 30.5799C31.6206 30.8889 31.3453 31.1001 31.0264 31.1001H9.06864C8.74973 31.1001 8.47441 30.8889 8.40574 30.5799L8.40592 30.5798L8.40347 30.5705L3.82184 13.1475L3.77282 12.9611H3.58006H0.954684C0.567679 12.9611 0.25 12.6434 0.25 12.2564C0.25 11.8694 0.567679 11.5517 0.954684 11.5517H8.59216H8.72314L8.7977 11.444L16.101 0.894784L16.1011 0.894806L16.1035 0.891157C16.306 0.58737 16.7674 0.504504 17.0934 0.721823C17.3966 0.923975 17.4797 1.38402 17.2639 1.70989L10.678 11.207L10.4058 11.5995H10.8834H29.1656H29.6432L29.371 11.207L22.7851 1.70994C22.5693 1.38406 22.6524 0.923984 22.9556 0.721823C23.2816 0.504504 23.743 0.58737 23.9455 0.891157L23.9454 0.891186L23.9484 0.895411L31.2995 11.4447ZM30.3112 29.6907H30.5042L30.5531 29.504L34.8014 13.2744L34.8834 12.9611H34.5596H5.53717H5.2133L5.29532 13.2744L9.54366 29.504L9.59253 29.6907H9.78551H30.3112Z" stroke="white" stroke-width="0.5"/><path d="M15.5023 26.0992C15.5023 26.4862 15.1846 26.8039 14.7976 26.8039C14.4106 26.8039 14.093 26.4862 14.093 26.0992V16.5523C14.093 16.1653 14.4106 15.8477 14.7976 15.8477C15.1846 15.8477 15.5023 16.1653 15.5023 16.5523V26.0992Z" stroke="white" stroke-width="0.5"/><path d="M20.7531 26.0992C20.7531 26.4862 20.4354 26.8039 20.0484 26.8039C19.6614 26.8039 19.3438 26.4862 19.3438 26.0992V16.5523C19.3438 16.1653 19.6614 15.8477 20.0484 15.8477C20.4354 15.8477 20.7531 16.1653 20.7531 16.5523V26.0992Z" stroke="white" stroke-width="0.5"/><path d="M26.0039 26.0992C26.0039 26.4862 25.6862 26.8039 25.2992 26.8039C24.9122 26.8039 24.5945 26.4862 24.5945 26.0992V16.5523C24.5945 16.1653 24.9122 15.8477 25.2992 15.8477C25.6862 15.8477 26.0039 16.1653 26.0039 16.5523V26.0992Z" stroke="white" stroke-width="0.5"/></svg></button>
-											</div>
-										</div>
-									</div>
+							</div>
+						</div>
+
+					</section>
+
+					<section class="news px-5 sm:px-0">
+						<h2 class="uppercase text-blue-500 font-bold mb-7 px-5 sm:px-0">Новости и акции</h2>
+
+						<div class="swiper news-slider w-[850px]">
+							<div class="swiper-wrapper">
+
+								<div class="swiper-slide">
+									<a href="#" class="block mb-5">
+										<img src="assets/img/news/1.jpg" alt="ALT" class="max-h-[130px] w-full object-cover object-center">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="block mb-5">
+										<img src="assets/img/news/1.jpg" alt="ALT" class="max-h-[130px] w-full object-cover object-center">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="block mb-5">
+										<img src="assets/img/news/1.jpg" alt="ALT" class="max-h-[130px] w-full object-cover object-center">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="block mb-5">
+										<img src="assets/img/news/1.jpg" alt="ALT" class="max-h-[130px] w-full object-cover object-center">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="block mb-5">
+										<img src="assets/img/news/1.jpg" alt="ALT" class="max-h-[130px] w-full object-cover object-center">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="block mb-5">
+										<img src="assets/img/news/1.jpg" alt="ALT" class="max-h-[130px] w-full object-cover object-center">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="block mb-5">
+										<img src="assets/img/news/1.jpg" alt="ALT" class="max-h-[130px] w-full object-cover object-center">
+									</a>
 								</div>
 
 							</div>
@@ -625,7 +652,7 @@
 
 					</section>
 
-					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 				</div>
 				<!-- /.site-content -->
@@ -669,6 +696,8 @@
 			<span>Профиль</span>
 		</a>
 	</div>
+
+	<script src="assets/js/app.min.js"></script>
 
 </body>
 

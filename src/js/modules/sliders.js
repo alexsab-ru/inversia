@@ -30,11 +30,17 @@ const bannersSlider = new Swiper('.banners-slider', {
 			slidesPerView: 1,
 			spaceBetween: 0
 		}
-	}
+	},
+	on: {
+		init: function (swiper) {
+			swiper.el.querySelector('.banners-button-next').classList.remove('!hidden');
+			swiper.el.querySelector('.banners-button-prev').classList.remove('!hidden');
+		},
+	},
 });
 
 const hitsSlider = new Swiper('.hits-slider', {
-	modules: [Scrollbar, Grid],
+	modules: [Grid],
 	breakpoints: {
 		320: {
 			slidesPerView: 2.2,
@@ -51,6 +57,29 @@ const hitsSlider = new Swiper('.hits-slider', {
 			spaceBetween: 0,
 			// centeredSlides: false,
 			// initialSlide: 0,
+			allowTouchMove: false,
+			grid: {
+				rows: 2,
+				fill: 'row'
+			},
+		},
+	}
+})
+
+const newsSlider = new Swiper('.news-slider', {
+	modules: [Grid],
+	breakpoints: {
+		320: {
+			slidesPerView: 1.2,
+			spaceBetween: 20,
+			grid: {
+				rows: 1,
+				fill: 'row'
+			},
+		},
+		768: {
+			slidesPerView: 3,
+			spaceBetween: 30,
 			allowTouchMove: false,
 			grid: {
 				rows: 2,
