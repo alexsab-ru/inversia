@@ -1,11 +1,12 @@
-import Swiper, { Navigation, FreeMode, Scrollbar, Pagination, Autoplay } from 'swiper';
+import Swiper, { Navigation, Grid, Scrollbar, Pagination, Autoplay } from 'swiper';
 import 'swiper/css';
+import 'swiper/css/grid';
 // import 'swiper/css/pagination';
 // import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
 
 const bannersSlider = new Swiper('.banners-slider', {
-	modules: [Navigation, Autoplay, FreeMode, Pagination],
+	modules: [Navigation, Autoplay, Pagination],
 	speed: 800,
 	loop: true,
 	autoplay: {
@@ -32,28 +33,32 @@ const bannersSlider = new Swiper('.banners-slider', {
 	}
 });
 
-// const catSlider = new Swiper('.categories-mobile-slider', {
-// 	modules: [FreeMode, Scrollbar],
-// 	freeMode: true,
-// 	scrollbar: {
-// 		el: '.categories-mobile-scrollbar',
-// 		draggable: true,
-// 	},
-// 	breakpoints: {
-// 		320: {
-// 			slidesPerView: 7,
-// 			spaceBetween: 20,
-// 		},
-// 		587: {
-// 			slidesPerView: 9,
-// 			spaceBetween: 20
-// 		},
-// 		768: {
-// 			slidesPerView: 12,
-// 			spaceBetween: 20
-// 		}
-// 	}
-// })
+const hitsSlider = new Swiper('.hits-slider', {
+	modules: [Scrollbar],
+	breakpoints: {
+		320: {
+			slidesPerView: 2.2,
+			spaceBetween: 20,
+			centeredSlides: true,
+			initialSlide: 1,
+			grid: {
+				rows: 1,
+				fill: 'row'
+			},
+		},
+		768: {
+			slidesPerView: 3,
+			spaceBetween: 0,
+			centeredSlides: false,
+			initialSlide: 0,
+			allowTouchMove: false,
+			grid: {
+				rows: 2,
+				fill: 'row'
+			},
+		},
+	}
+})
 
 const scrollbar = document.querySelector('.custom-scrollbar');
 scrollbar.addEventListener('scroll', function(e) {
