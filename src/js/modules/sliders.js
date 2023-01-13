@@ -34,7 +34,7 @@ const bannersSlider = new Swiper('.banners-slider', {
 });
 
 const hitsSlider = new Swiper('.hits-slider', {
-	modules: [Scrollbar],
+	modules: [Scrollbar, Grid],
 	breakpoints: {
 		320: {
 			slidesPerView: 2.2,
@@ -49,8 +49,8 @@ const hitsSlider = new Swiper('.hits-slider', {
 		768: {
 			slidesPerView: 3,
 			spaceBetween: 0,
-			centeredSlides: false,
-			initialSlide: 0,
+			// centeredSlides: false,
+			// initialSlide: 0,
 			allowTouchMove: false,
 			grid: {
 				rows: 2,
