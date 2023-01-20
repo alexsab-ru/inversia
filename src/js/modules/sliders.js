@@ -61,7 +61,7 @@ const hitsSlider = new Swiper('.hits-slider', {
 			allowTouchMove: false,
 			loop: false,
 			grid: {
-				rows: 2,
+				rows: 4,
 				fill: 'row'
 			},
 		},
@@ -84,7 +84,7 @@ const newsSlider = new Swiper('.news-slider', {
 			spaceBetween: 30,
 			allowTouchMove: false,
 			grid: {
-				rows: 2,
+				rows: 4,
 				fill: 'row'
 			},
 		},
