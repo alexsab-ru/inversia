@@ -1,0 +1,44 @@
+[
+	{
+		"id": 1,
+		"url": "javascript:void(0)",
+		"title": "Салфетки дезинфицирующие Дез Клинер (зап. блок 200шт)",
+		"price": "360",
+		"oldPrice": "400"
+	},
+	{
+		"id": 2,
+		"url": "javascript:void(0)",
+		"title": "Спектрум ТиПиЭйч/Spectrum TPH3 - светоотвержд. пломб. материал, набор (6шпр. х4,5 гр+4,5мл+3мл)",
+		"price": "9045.50",
+		"oldPrice": "10045"
+	},
+	{
+		"id": 3,
+		"url": "javascript:void(0)",
+		"title": "Каризма Классик/Charisma Classic Syr Combi Kit (8х4гр+G2B 4мл)",
+		"price": "11191.50",
+		"oldPrice": "12435"
+	},
+	{
+		"id": 4,
+		"url": "javascript:void(0)",
+		"title": "ДенФил/DenFil, набор (5х4гр + бонд - 5мл, гель - 5мл)",
+		"price": "6025.50",
+		"oldPrice": "6695"
+	},
+	{
+		"id": 5,
+		"url": "javascript:void(0)",
+		"title": "ОптиБонд Соло Плюс/OptiBond Solo Plus - адгезив, 5мл",
+		"price": "2736",
+		"oldPrice": "3040"
+	},
+	{
+		"id": 6,
+		"url": "javascript:void(0)",
+		"title": "СДР Плюс/SDR Plus - жидкотек. композит. материал (компьюлы) 0,25гр х 110шт",
+		"price": "25200",
+		"oldPrice": "28000"
+	}
+]

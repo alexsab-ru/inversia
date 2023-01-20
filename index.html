@@ -87,10 +87,14 @@
 				<div class="flex-grow">
 					<form class="search-form">
 						<div class="relative">
-							<input type="text" name="search" class="w-full border border-gray-300 rounded pl-4 pr-16 py-4 sm:py-[26px] text-[14px] leading-none placeholder:text-gray-300 duration-300 focus:outline-0 focus:border-blue-500" placeholder="Поиск">
+							<input type="text" name="search" class="w-full border border-gray-300 pl-4 pr-16 py-4 sm:py-[26px] text-[14px] leading-none placeholder:text-gray-300 duration-300 focus:outline-0 focus:border-blue-500" placeholder="Поиск">
 							<button type="submit" class="absolute right-5 top-1/2 -translate-y-1/2">
 								<img src="assets/img/icons/search.svg" class="w-[30px]" alt="Поиск">
 							</button>
+							<div class="result-search">
+								<img src="assets/img/spinner.svg" alt="Загрузка" class="spinner mx-auto py-2">
+								<div class="result-list hidden"></div>
+							</div>
 						</div>
 					</form>
 				</div>
@@ -858,6 +862,73 @@
 			<span>Профиль</span>
 		</a>
 	</div>
+
+	<script>
+		const searchForm = document.querySelector('.search-form');
+		if(searchForm){
+			const searchInput = searchForm.querySelector('input');
+			const spinner = searchForm.querySelector('.spinner');
+			const resultList = searchForm.querySelector('.result-list');
+			searchForm.addEventListener('submit', e => {e.preventDefault()})
+			searchInput.addEventListener('keyup', function(e){
+				if(this.value && this.value.length > 2){
+					resultList.innerHTML = '';
+					spinner.classList.remove('hidden');
+					resultList.classList.add('hidden');
+					searchForm.classList.add('active');
+					// fetch
+					fetch('search.json')
+					.then(response => response.json())
+					.then(data => {
+						if(!data.length){
+							resultList.insertAdjacentHTML('beforeend', '<p class="px-2 py-2.5">По вашему запросу ничего не найдено...</p>');
+						}else{
+							data.forEach(item => {
+								price = item.price ? (+item.price).toLocaleString('ru-RU', { style: 'currency', currency: 'RUB' }) : 'По запросу';
+								oldPrice = item.oldPrice ? `<s class="text-gray-300">${(+item.oldPrice).toLocaleString('ru-RU', { style: 'currency', currency: 'RUB' })}</s>` : '';
+								resultList.insertAdjacentHTML('beforeend', `
+									<div class="flex items-center gap-2 p-2">
+										<div class="w-[80px] flex-shrink-0 flex items-center justify-center">
+											<img src="assets/img/hits/${item.id}.jpg" class="h-[40px] w-[40px] object-cover object-center" alt="${item.title}">
+										</div>
+										<div class="space-y-1.5 truncate">
+											<a href="${item.url}" class="duration-300 hover:underline hover:text-blue-500" title="${item.title}">${item.title}</a>
+											<p>
+												${oldPrice}
+												<span class="font-bold">${price}</span>
+											</p>
+										</div>
+									</div>
+								`);
+							})
+						}
+					})
+					setTimeout(() => {
+						spinner.classList.add('hidden');
+						resultList.classList.remove('hidden');
+					}, 2000)
+				}else{
+					searchForm.classList.remove('active');
+				}
+			})
+			
+			document.addEventListener( 'click', (e) => {
+				const withinBoundaries = e.composedPath().includes(searchForm);
+				if ( ! withinBoundaries ) {
+					searchForm.classList.remove('active');
+					searchInput.value = '';
+				}
+			});
+			document.addEventListener('keydown', function(e) {
+				if( e.keyCode == 27 ){
+					searchForm.classList.remove('active');
+					searchInput.value = '';
+					searchInput.blur();
+				}
+			});
+		}
+
+	</script>
 
 	<script src="assets/js/app.min.js"></script>
 
