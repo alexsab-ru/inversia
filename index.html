@@ -821,7 +821,7 @@
 			<div class="container">
 				<div class="flex items-center justify-between">
 					<p class="text-[10px] sm:text-[14px]">2016-2022 © Стоматологическое оборудование и материалы ООО Фирма «Инверсия»</p>
-					<a href="javascript:void(0)" class="hidden md:flex items-center gap-2">
+					<a href="javascript:void(0)" onclick="window.scrollTo({top: 0, left: 0, behavior: 'smooth'})" class="hidden md:flex items-center gap-2">
 						<img src="assets/img/icons/arrow-up-gray.svg" alt="Наверх">
 						<span>Наверх</span>
 					</a>
@@ -863,13 +863,16 @@
 		</a>
 	</div>
 
+	<div class="btn-up btn-up_hide"></div>
+
 	<script>
+	document.addEventListener("DOMContentLoaded", function(event) {
 		const searchForm = document.querySelector('.search-form');
 		if(searchForm){
 			const searchInput = searchForm.querySelector('input');
 			const spinner = searchForm.querySelector('.spinner');
 			const resultList = searchForm.querySelector('.result-list');
-			searchForm.addEventListener('submit', e => {e.preventDefault()})
+			searchForm.addEventListener('submit', e => {e.preventDefault()});
 			searchInput.addEventListener('keyup', function(e){
 				if(this.value && this.value.length > 2){
 					resultList.innerHTML = '';
@@ -928,6 +931,7 @@
 			});
 		}
 
+		});
 	</script>
 
 	<script src="assets/js/app.min.js"></script>
