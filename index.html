@@ -700,16 +700,58 @@
 	</main>
 
 	<footer class="text-white">
-		<div class="bg-blue-500 py-14">
+		<div class="bg-blue-500 py-8 lg:py-14">
 			<div class="container">
 
-				<a href="#">
+				<ul class="flex sm:hidden gap-4 mb-6">
+					<li class="relative group">
+						<div class="flex items-center gap-1.5 transition-colors duration-300 ease-in-out lg:hover:bg-white/10">
+							<span>Покупателям</span>
+							<img src="assets/img/icons/arrow-down-white.svg">
+						</div>
+						<ul class="absolute left-0 top-full bg-white rounded shadow-xl text-gray-300 min-w-full w-fit opacity-0 invisible transition-all duration-300 group-hover:opacity-100 group-hover:visible">
+							<li><a href="#" class="whitespace-nowrap block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Ссылка #1</a></li>
+							<li><a href="#" class="whitespace-nowrap block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Ссылка #2</a></li>
+							<li><a href="#" class="whitespace-nowrap block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Ссылка #3</a></li>
+							<li><a href="#" class="whitespace-nowrap block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Ссылка #4</a></li>
+						</ul>
+					</li>
+					<li class="relative group">
+						<div class="flex items-center gap-1.5 transition-colors duration-300 ease-in-out lg:hover:bg-white/10">
+							<span>О компании</span>
+							<img src="assets/img/icons/arrow-down-white.svg">
+						</div>
+						<ul class="absolute left-0 top-full bg-white rounded shadow-xl text-gray-300 min-w-full w-fit opacity-0 invisible transition-all duration-300 group-hover:opacity-100 group-hover:visible">
+							<li><a href="#" class="whitespace-nowrap block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Ссылка #1</a></li>
+							<li><a href="#" class="whitespace-nowrap block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Ссылка #2</a></li>
+							<li><a href="#" class="whitespace-nowrap block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Ссылка #3</a></li>
+							<li><a href="#" class="whitespace-nowrap block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Ссылка #4</a></li>
+							<li><a href="#" class="whitespace-nowrap block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Ссылка #5</a></li>
+							<li><a href="#" class="whitespace-nowrap block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Ссылка #6</a></li>
+							<li><a href="#" class="whitespace-nowrap block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Ссылка #7</a></li>
+						</ul>
+					</li>
+				</ul>
+
+				<form class="md:hidden">
+					<h3 class="mb-4">Следите за новинками и акциями:</h3>
+					<div class="relative max-w-[500px] w-full">
+						<input type="email" class="text-black placeholder:text-gray-300 focus:outline-0 py-4 pl-2.5 pr-14 rounded w-full" placeholder="Введите e-mail и подпишитесь">
+						<button type="submit" class="absolute right-2.5 top-2">
+							<img src="assets/img/icons/subscribe-blue.svg" class="w-9 h-auto" />
+						</button>
+					</div>
+				</form>
+
+				<div class="my-8 md:hidden">Social</div>
+
+				<a href="#" class="hidden lg:inline-block">
 					<img src="assets/img/logo-white.svg" class="w-[262px]" alt="ALT">
 				</a>
 
-				<div class="mt-9 grid grid-cols-3 items-end mb-14">
-					<div class="col-span-1 space-y-4">
-						<a href="tel:+78463738000" class="text-[33px] leading-[38px] font-bold">8 (846) 37 38 000</a>
+				<div class="mb-6 lg:my-9 grid lg:grid-cols-3">
+					<div class="col-span-1 space-y-2 sm:space-y-4">
+						<a href="tel:+78463738000" class="inline-block mb-4 sm:mb-0 text-[28px] leading-[32px] lg:text-[33px] lg:leading-[38px] font-bold">8 (846) 37 38 000</a>
 						<div class="flex gap-2 uppercase font-bold">
 							<span class="min-w-[51px]">Адрес:</span>
 							<span>Самара, пр. Ленина, 10</span>
@@ -728,7 +770,7 @@
 						</div>
 					</div>
 
-					<div class="col-span-2">
+					<div class="hidden lg:block col-span-2 lg:mt-14">
 						<nav>
 							<ul class="grid grid-cols-2">
 								<div class="space-y-4">
@@ -749,7 +791,7 @@
 					</div>
 				</div>
 
-				<div class="space-y-4">
+				<div class="space-y-2 sm:space-y-4 text-[10px] sm:text-[14px]">
 					<p>Персональный раздел</p>
 					<p>* не суммируется с действующими скидками и не распространяется на некоторые группы товаров. Подробности у менеджеров.</p>
 					<p>Изображения представленного товара могут отличаться от оригинала продукции.</p>
@@ -757,11 +799,11 @@
 
 			</div>
 		</div>
-		<div class="bg-white py-7 text-gray-300">
+		<div class="bg-white py-4 md:py-7 text-gray-300">
 			<div class="container">
 				<div class="flex items-center justify-between">
-					<p>2016-2022 © Стоматологическое оборудование и материалы ООО Фирма «Инверсия»</p>
-					<a href="javascript:void(0)" class="flex items-center gap-2">
+					<p class="text-[10px] sm:text-[14px]">2016-2022 © Стоматологическое оборудование и материалы ООО Фирма «Инверсия»</p>
+					<a href="javascript:void(0)" class="hidden md:flex items-center gap-2">
 						<img src="assets/img/icons/arrow-up-gray.svg" alt="Наверх">
 						<span>Наверх</span>
 					</a>
