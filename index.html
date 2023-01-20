@@ -887,18 +887,18 @@
 								price = item.price ? (+item.price).toLocaleString('ru-RU', { style: 'currency', currency: 'RUB' }) : 'По запросу';
 								oldPrice = item.oldPrice ? `<s class="text-gray-300">${(+item.oldPrice).toLocaleString('ru-RU', { style: 'currency', currency: 'RUB' })}</s>` : '';
 								resultList.insertAdjacentHTML('beforeend', `
-									<div class="flex items-center gap-2 p-2">
+									<a href="${item.url}" class="flex items-center gap-2 p-2 duration-300 hover:bg-gray-100" title="${item.title}">
 										<div class="w-[80px] flex-shrink-0 flex items-center justify-center">
 											<img src="assets/img/hits/${item.id}.jpg" class="h-[40px] w-[40px] object-cover object-center" alt="${item.title}">
 										</div>
 										<div class="space-y-1.5 truncate">
-											<a href="${item.url}" class="duration-300 hover:underline hover:text-blue-500" title="${item.title}">${item.title}</a>
+											<span>${item.title}</span>
 											<p>
 												${oldPrice}
 												<span class="font-bold">${price}</span>
 											</p>
 										</div>
-									</div>
+									</a>
 								`);
 							})
 						}

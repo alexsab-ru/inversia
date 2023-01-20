@@ -1,17 +1,6 @@
 .categories-mobile-list{
 	position: relative;
-	&::before{
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100px;
-		left: 0;
-		bottom: 0;
-		background: linear-gradient(360deg, #ffffff 30%, rgba(217, 217, 217, 0) 75%);
-		opacity: 1;
-		transition: opacity .2s;
-	}
-	&.end::before{
+	&.end .custom-scrollbar::before{
 		opacity: 0;
 	}
 }
@@ -21,6 +10,17 @@
 	}
 	&::-webkit-scrollbar-thumb {
 		@apply bg-blue-500;
+	}
+	&::before{
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100px;
+		left: 0;
+		top: calc(100% - 100px);
+		background: linear-gradient(360deg, #ffffff 30%, rgba(217, 217, 217, 0) 75%);
+		opacity: 1;
+		transition: opacity .2s;
 	}
 }
 .categories-mobile-item{
