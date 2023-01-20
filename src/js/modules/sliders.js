@@ -39,12 +39,38 @@ const bannersSlider = new Swiper('.banners-slider', {
 	},
 });
 
-const hitsSlider = new Swiper('.hits-slider', {
+const newsSlider = new Swiper('.news-slider', {
+	modules: [Grid],
+	breakpoints: {
+		320: {
+			slidesPerView: 1.2,
+			spaceBetween: 20,
+			allowTouchMove: true,
+			grid: {
+				rows: 1,
+				fill: 'row'
+			},
+		},
+		768: {
+			slidesPerView: 3,
+			spaceBetween: 30,
+			allowTouchMove: false,
+			grid: {
+				rows: 4,
+				fill: 'row'
+			},
+		},
+	}
+})
+
+let hitsSlider = null;
+const hitsSliderOptions = {
 	modules: [Grid],
 	breakpoints: {
 		320: {
 			slidesPerView: 2.4,
 			spaceBetween: 20,
+			allowTouchMove: true,
 			centeredSlides: true,
 			initialSlide: 1,
 			loop: true,
@@ -63,28 +89,21 @@ const hitsSlider = new Swiper('.hits-slider', {
 				fill: 'row'
 			},
 		},
-	}
-})
+	},
+}
 
-const newsSlider = new Swiper('.news-slider', {
-	modules: [Grid],
-	breakpoints: {
-		320: {
-			slidesPerView: 1.2,
-			spaceBetween: 20,
-			grid: {
-				rows: 1,
-				fill: 'row'
-			},
-		},
-		768: {
-			slidesPerView: 3,
-			spaceBetween: 30,
-			allowTouchMove: false,
-			grid: {
-				rows: 4,
-				fill: 'row'
-			},
-		},
+hitsSlider = new Swiper('.hits-slider', hitsSliderOptions);
+let desktop = true;
+window.addEventListener('resize', function(e){
+	if(window.innerWidth > 767 ){
+		if(desktop){
+			hitsSlider.destroy(true, true);
+			hitsSlider = new Swiper('.hits-slider', hitsSliderOptions);
+			desktop = false;
+		}
+	}else{
+		hitsSlider.params.loop = true;
+		hitsSlider.update();
+		desktop = true;
 	}
 })
