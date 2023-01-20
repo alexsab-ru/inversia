@@ -709,7 +709,7 @@
 							<span>Покупателям</span>
 							<img src="assets/img/icons/arrow-down-white.svg">
 						</div>
-						<ul class="absolute left-0 top-full bg-white rounded shadow-xl text-gray-300 min-w-full w-fit opacity-0 invisible transition-all duration-300 group-hover:opacity-100 group-hover:visible">
+						<ul class="absolute left-0 top-full bg-white rounded shadow-xl text-gray-300 min-w-full w-fit opacity-0 invisible transition-all duration-300 group-hover:opacity-100 group-hover:visible z-10">
 							<li><a href="#" class="whitespace-nowrap block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Ссылка #1</a></li>
 							<li><a href="#" class="whitespace-nowrap block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Ссылка #2</a></li>
 							<li><a href="#" class="whitespace-nowrap block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Ссылка #3</a></li>
@@ -721,7 +721,7 @@
 							<span>О компании</span>
 							<img src="assets/img/icons/arrow-down-white.svg">
 						</div>
-						<ul class="absolute left-0 top-full bg-white rounded shadow-xl text-gray-300 min-w-full w-fit opacity-0 invisible transition-all duration-300 group-hover:opacity-100 group-hover:visible">
+						<ul class="absolute left-0 top-full bg-white rounded shadow-xl text-gray-300 min-w-full w-fit opacity-0 invisible transition-all duration-300 group-hover:opacity-100 group-hover:visible z-10">
 							<li><a href="#" class="whitespace-nowrap block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Ссылка #1</a></li>
 							<li><a href="#" class="whitespace-nowrap block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Ссылка #2</a></li>
 							<li><a href="#" class="whitespace-nowrap block px-3 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Ссылка #3</a></li>
@@ -735,15 +735,29 @@
 
 				<form class="md:hidden">
 					<h3 class="mb-4">Следите за новинками и акциями:</h3>
-					<div class="relative max-w-[500px] w-full">
+					<div class="relative max-w-[500px] w-full mb-2">
 						<input type="email" class="text-black placeholder:text-gray-300 focus:outline-0 py-4 pl-2.5 pr-14 rounded w-full" placeholder="Введите e-mail и подпишитесь">
 						<button type="submit" class="absolute right-2.5 top-2">
 							<img src="assets/img/icons/subscribe-blue.svg" class="w-9 h-auto" />
 						</button>
 					</div>
+					<p class="text-[10px] leading-none">Подписываясь на рассылку, Вы соглашаетесь с условиями <a href="#" class="underline whitespace-nowrap">политики конфиденциальности</a></p>
 				</form>
 
-				<div class="my-8 md:hidden">Social</div>
+				<div class="my-8 flex items-center gap-5 md:hidden">
+					<a href="#" target="_blank">
+						<img src="assets/img/icons/social/vk.svg" alt="ALT">
+					</a>
+					<a href="#" target="_blank">
+						<img src="assets/img/icons/social/inst.svg" alt="ALT">
+					</a>
+					<a href="#" target="_blank">
+						<img src="assets/img/icons/social/telegram.svg" alt="ALT">
+					</a>
+					<a href="#" target="_blank">
+						<img src="assets/img/icons/social/whatsapp.svg" alt="ALT">
+					</a>
+				</div>
 
 				<a href="#" class="hidden lg:inline-block">
 					<img src="assets/img/logo-white.svg" class="w-[262px]" alt="ALT">
