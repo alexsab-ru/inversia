@@ -43,10 +43,11 @@ const hitsSlider = new Swiper('.hits-slider', {
 	modules: [Grid],
 	breakpoints: {
 		320: {
-			slidesPerView: 2.2,
+			slidesPerView: 2.4,
 			spaceBetween: 20,
 			centeredSlides: true,
 			initialSlide: 1,
+			loop: true,
 			grid: {
 				rows: 1,
 				fill: 'row'
@@ -58,6 +59,7 @@ const hitsSlider = new Swiper('.hits-slider', {
 			// centeredSlides: false,
 			// initialSlide: 0,
 			allowTouchMove: false,
+			loop: false,
 			grid: {
 				rows: 2,
 				fill: 'row'
