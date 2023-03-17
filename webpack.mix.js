@@ -3,7 +3,8 @@ require('mix-tailwindcss');
 mix
 	.js('src/js/app.js', 'assets/js/app.min.js')
 	.sass('src/scss/app.scss', 'assets/css/styles.min.css')
-	.tailwind();
+	.tailwind()
+	.setPublicPath('/');
 
 
 
