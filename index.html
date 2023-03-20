@@ -667,7 +667,7 @@
 							<form class="flex items-center gap-5">
 								<span class="text-white inline-block leading-none">Email</span>
 								<input type="email" name="subscribe" class="w-[270px] h-[30px] rounded focus:outline-0 px-2">
-								<button type="submit" class="leading-[30px] h-[30px] px-4 border border-white rounded text-white duration-300 hover:bg-white hover:text-black">Подписаться</button>
+								<button type="submit" class="btn btn-o white">Подписаться</button>
 							</form>
 						</div>
 
@@ -880,6 +880,32 @@
 	</div>
 
 	<div class="btn-up btn-up_hide"></div>
+
+	<!-- MODALS -->
+
+	<div class="hidden fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white px-6 !py-5 shadow-2xl z-50 max-w-[400px] w-full" id="" style="">
+		<div class="" id=""><span class="block text-[14px] text-gray-500 font-bold mb-6">Товар добавлен в корзину</span></div>
+		<div id="" class="text-center mb-8">
+			<div style="">
+				<img src="assets/img/hits/1.jpg" height="130" style="" class="max-w-full mx-auto !mb-4">
+				<p>FG ТВС 39 (018) - 31</p>
+			</div>
+		</div>
+		<span class="flex items-center justify-center w-12 h-12 font-bold text-gray-500 absolute top-0 right-0 cursor-pointer text-lg transition-opacity duration-300 opacity-80 hover:opacity-100">&times;</span>
+		<div class="flex items-center justify-center gap-2 flex-wrap">
+			<button class="btn btn-o font-bold flex-grow" style="">
+				<span class="" id="" style="">Перейти в корзину</span>
+			</button>
+			<button class="btn font-bold flex-grow" style="">
+				<span class="" id="">Продолжить покупки</span>
+			</button>
+		</div>
+	</div>
+	<!-- OVERLAY -->
+	<div class="hidden popup-window-overlay fixed top-0 right-0 bottom-0 left-0 z-40 bg-black/50" id="" style=""></div>
+	<!-- END OVERLAY -->
+
+	<!-- END MODALS -->
 
 	<script>
 	document.addEventListener("DOMContentLoaded", function(event) {
