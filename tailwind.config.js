@@ -28,6 +28,7 @@ module.exports = {
 			},
 			white: colors.white,
 			black: colors.black,
+			red: colors.red,
 			transparent: 'transparent',
 		},
 		extend: {
