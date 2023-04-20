@@ -11,7 +11,7 @@
 
 <body class="pb-[60px] sm:pb-0">
 
-	<div class="top-line sticky w-full left-0 top-0 bg-blue-500 text-white z-50">
+	<div class="top-line sticky w-full left-0 top-0 bg-blue-500 text-white py-2 md:py-0 z-50">
 		<div class="i-container">
 
 			<div class="flex items-center justify-between">
@@ -20,7 +20,7 @@
 					<img src="assets/img/logo-white.svg" alt="Инверсия">
 				</a>
 
-				<div class="relative group order-3 lg:order-1">
+				<div class="relative group hidden md:block order-3 lg:order-1">
 					<div class="flex items-center gap-1.5 h-[70px] lg:h-[50px] !leading-none relative">
 						<img src="assets/img/icons/location.svg" class="-mt-1" />
 						<span>Самара</span>
@@ -34,7 +34,7 @@
 					</div>
 				</div>
 
-				<ul class="hidden sm:flex order-2">
+				<ul class="hidden md:flex order-2">
 					<li class="relative group">
 						<div class="px-3.5 flex items-center gap-1.5 h-[70px] lg:h-[50px] transition-colors duration-300 ease-in-out lg:hover:bg-white/10">
 							<span>Покупателям</span>
@@ -70,12 +70,91 @@
 					<span>Пн-Пт: 9:00-18:00 | Сб: 9:00-14:00</span>
 				</div>
 
+				<a href="#menu" class="text-white h-10 w-10 flex items-center justify-center md:hidden order-3">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg>					  
+				</a>
+
 			</div>
 
 		</div>
 		<!-- /.i-container -->
 	</div>
 	<!-- /.top-line -->
+
+	<!-- mobile-menu START -->
+	<div id="menu" class="fixed top-0 right-0 bottom-0 pt-12 pb-8 max-w-xs w-full bg-white z-[100] overflow-y-auto shadow-2xl transition-transform translate-x-full target:translate-x-0 peer md:hidden">
+		<a href="#" class="absolute h-10 w-10 flex items-center justify-center top-0 right-0 text-gray-500">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+		</a>
+
+		<ul class="space-y-4">
+			<li>
+				<span class="px-4 mb-2 block font-bold">Покупателям</span>
+				<ul>
+					<li><a href="javascript:void(0)" class="px-8 py-2 bg-gray-100 block">Каталог</a></li>
+					<li><a href="javascript:void(0)" class="px-8 py-2 block">Новости и Акции</a></li>
+					<li><a href="javascript:void(0)" class="px-8 py-2 block">Доставка и оплата</a></li>
+					<li><a href="javascript:void(0)" class="px-8 py-2 block">Сервисный центр</a></li>
+					<li><a href="javascript:void(0)" class="px-8 py-2 block">Как сделать заказ</a></li>
+					<li><a href="javascript:void(0)" class="px-8 py-2 block">Возврат и обмен</a></li>
+				</ul>
+			</li>
+			<li>
+				<span class="px-4 mb-2 block font-bold">О компании</span>
+				<ul>
+					<li><a href="javascript:void(0)" class="px-8 py-2 block">Контакты</a></li>
+					<li><a href="javascript:void(0)" class="px-8 py-2 block">Лицензии</a></li>
+					<li><a href="javascript:void(0)" class="px-8 py-2 block">Ключевые бренды</a></li>
+					<li><a href="javascript:void(0)" class="px-8 py-2 block">О компании</a></li>
+					<li><a href="javascript:void(0)" class="px-8 py-2 block">АТИ</a></li>
+				</ul>
+			</li>
+		</ul>
+
+		<hr class="border-t border-t-gray-300/40 mx-4 my-4">
+
+		<div class="relative group px-4 mb-2">
+			<div class="flex items-center py-2 gap-2 relative">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 stroke-blue-500">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+					<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+				  </svg>				  
+				<span class="pt-1">Самара</span>
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-blue-500 mt-1">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+				</svg>				  
+			</div>
+			<div class="absolute right-0 lg:right-auto left-auto lg:left-0 top-full bg-white rounded shadow-xl text-gray-300 min-w-full w-fit opacity-0 invisible transition-all duration-300 group-hover:opacity-100 group-hover:visible">
+				<a href="javascript:void(0)" class="block px-6 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Тольятти</a>
+				<a href="javascript:void(0)" class="block px-6 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Сызрань</a>
+				<a href="javascript:void(0)" class="block px-6 pb-2 pt-2.5 transition-colors duration-200 hover:bg-gray-100">Новосибирск</a>
+			</div>
+		</div>
+
+		<div class="flex gap-2 items-center px-4 mb-4">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 stroke-blue-500">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+			</svg>						
+			<a href="tel:+78463738000">8 (846) 37 38 000</a>
+		</div>
+
+		<div class="flex gap-2 items-center px-4 mb-4">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 stroke-blue-500">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z" />
+			</svg>
+			<span>пр. Ленина, д.10</span>
+		</div>
+
+		<div class="flex gap-2 items-center px-4">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 stroke-blue-500">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+			</svg>			  
+			<span>Пн-Пт: 9:00-18:00 | Сб: 9:00-14:00</span>
+		</div>
+
+	</div>
+	<a href="#" class="fixed inset-0 bg-black/70 z-[90] hidden peer-target:block md:!hidden"></a>
+	<!-- mobile-menu END -->
 
 	<header class="header">
 		<div class="i-container">
