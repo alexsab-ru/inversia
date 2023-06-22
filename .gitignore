@@ -2,5 +2,8 @@
 phpmailer
 sftp-config*.json
 node_modules
+.DS_Store
 desktop.ini
 .pnpm-debug.log
+dist
+*.local
