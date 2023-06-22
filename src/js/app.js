@@ -1,3 +1,3 @@
 import './modules/sliders';
-// import './modules/scroll.bar';
+import './modules/catalog';
 import './modules/btn.up';
