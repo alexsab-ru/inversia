@@ -11,7 +11,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@tailwindcss/line-clamp": "^0.4.2",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.24",
     "resolve-url-loader": "^5.0.0",
