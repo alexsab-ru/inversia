@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination, Grid } from 'swiper/modules';
+import { Navigation, Pagination, Grid, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/grid';
 // import 'swiper/css/pagination';
@@ -7,7 +7,7 @@ import 'swiper/css/grid';
 // import 'swiper/css/scrollbar';
 
 const bannersSlider = new Swiper('.banners-slider', {
-	modules: [Pagination, Navigation],
+	modules: [Pagination, Navigation, Autoplay],
 	speed: 800,
 	loop: true,
 	autoplay: {
