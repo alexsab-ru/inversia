@@ -6,7 +6,7 @@ on:
       - master # Here source code branch is `master`, it could be other branch
 
 jobs:
-  gh-pages:
+  build_and_deploy:
     concurrency: ci-${{ github.ref }}
     runs-on: ubuntu-latest
     steps:
