@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite --host --open",
     "build": "vite build",
-    "preview": "vite preview"
+    "build_empty": "vite build --emptyOutDir",
+    "watch": "vite build --watch",
+    "preview": "vite preview --host --open"
   },
   "author": "",
   "license": "ISC",
